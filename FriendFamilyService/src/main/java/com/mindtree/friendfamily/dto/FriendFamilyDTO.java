@@ -1,9 +1,14 @@
 package com.mindtree.friendfamily.dto;
 
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
 public class FriendFamilyDTO {
 
-	public FriendFamilyDTO() {
-		// TODO Auto-generated constructor stub
-	}
-
+	private Integer id;
+	private Long phoneNo;
+	private Long friendAndFamily;
 }

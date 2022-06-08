@@ -1,9 +1,13 @@
 package com.mindtree.calldetails.utility;
 
-public class Conversion {
 
-	public Conversion() {
-		// TODO Auto-generated constructor stub
+import org.modelmapper.ModelMapper;
+
+public class Conversion<T,E> {
+
+	public E getConvertedObject(T source,Class<E> destination)
+	{
+		return new ModelMapper().map(source,destination);
 	}
 
 }

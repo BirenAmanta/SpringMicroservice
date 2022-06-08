@@ -1,9 +1,15 @@
 package com.mindtree.plan.dto;
 
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
 public class PlanDTO {
 
-	public PlanDTO() {
-		// TODO Auto-generated constructor stub
-	}
-
+	private Integer planId;
+	private String planName;
+	private Integer nationalRate;
+	private Integer localRate;
 }

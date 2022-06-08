@@ -1,0 +1,22 @@
+server:
+  port: 1002
+ 
+spring:
+  application:
+    name: CustomerMS
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        hostname: localhost
+      config:
+        enabled: true
+        prefixes:
+        -  config
+        default-context: application
+        profile-separator: '::'
+        format: YAML
+  config:
+    import: 'consul:'
+    

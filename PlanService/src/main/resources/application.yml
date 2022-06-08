@@ -1,0 +1,20 @@
+server:
+  port: 1004
+ 
+spring:
+  application:
+    name: PlanMS
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+      config:
+        enabled: true
+        prefixes:
+        -  config
+        default-context: application
+        profile-separator: '::'
+        format: YAML
+  config:
+    import: 'consul:'
+    

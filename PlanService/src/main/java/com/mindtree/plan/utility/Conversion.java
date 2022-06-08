@@ -1,9 +1,12 @@
 package com.mindtree.plan.utility;
 
-public class Conversion {
+import org.modelmapper.ModelMapper;
 
-	public Conversion() {
-		// TODO Auto-generated constructor stub
+public class Conversion<T,E> {
+
+	public E getConvertedObject(T source,Class<E> destination)
+	{
+		return new ModelMapper().map(source,destination);
 	}
 
 }
