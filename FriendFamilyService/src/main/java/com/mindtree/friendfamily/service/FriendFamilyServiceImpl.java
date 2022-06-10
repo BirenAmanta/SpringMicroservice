@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
+//import org.springframework.cloud.client.ServiceInstance;
+//import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import com.mindtree.friendfamily.dto.CustomerDTO;
@@ -24,18 +24,18 @@ public class FriendFamilyServiceImpl implements FriendFamilyService {
 	@Autowired
 	RestTemplate restTemplate;
 	
-	@Autowired
-	private DiscoveryClient client;
+//	@Autowired
+//	private DiscoveryClient client;
 
 	@Override
 	public void saveFriend(Long phoneNo, FriendFamilyDTO friendDTO) throws FriendFamilyException {
-		List<ServiceInstance> customerUrls = client.getInstances("CustomerMS");
-		String customerUrl = "";
-		if (!customerUrls.isEmpty() && customerUrls != null)
-			customerUrl = customerUrls.get(0).getUri().toString();
-		else
-			throw new FriendFamilyException("");
-		CustomerDTO data = restTemplate.getForObject(customerUrl+"/customer/find/{phoneno}", CustomerDTO.class,
+//		List<ServiceInstance> customerUrls = client.getInstances("CustomerMS");
+//		String customerUrl = "";
+//		if (!customerUrls.isEmpty() && customerUrls != null)
+//			customerUrl = customerUrls.get(0).getUri().toString();
+//		else
+//			throw new FriendFamilyException("");
+		CustomerDTO data = restTemplate.getForObject("http://CustomerMS/customer/find/{phoneno}", CustomerDTO.class,
 				friendDTO.getFriendAndFamily());
 		if (data == null) {
 			throw new FriendFamilyException("");

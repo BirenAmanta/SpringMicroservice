@@ -1,98 +1,392 @@
-[INFO ] 2022-06-05 14:51:04.120 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
-[INFO ] 2022-06-05 14:51:04.199 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 2022-06-05 14:51:04.199 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 2022-06-05 14:51:05.890 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-06-05 14:51:05.930 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-06-05 14:51:06.485 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
-[INFO ] 2022-06-05 14:51:06.498 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-05 14:51:06.498 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2022-06-05 14:51:06.498 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-[INFO ] 2022-06-05 14:51:06.598 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2022-06-05 14:51:06.598 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2398 ms
-[INFO ] 2022-06-05 14:51:06.741 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 2022-06-05 14:51:07.031 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 2022-06-05 14:51:07.065 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-06-05 14:51:07.105 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-[INFO ] 2022-06-05 14:51:07.268 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-06-05 14:51:07.378 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[INFO ] 2022-06-05 14:51:07.800 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-06-05 14:51:07.806 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-06-05 14:51:08.157 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[WARN ] 2022-06-05 14:51:09.430 [restartedMain] UserDetailsServiceAutoConfiguration - 
+[INFO ] 2022-06-09 13:24:02.962 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2022-06-09 13:24:03.032 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-06-09 13:24:03.032 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-06-09 13:24:03.587 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-09 13:24:03.703 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-09 13:24:03.944 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
+[INFO ] 2022-06-09 13:24:04.416 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+[INFO ] 2022-06-09 13:24:04.424 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-09 13:24:04.424 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-09 13:24:04.424 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-09 13:24:04.558 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-09 13:24:04.558 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1526 ms
+[INFO ] 2022-06-09 13:24:04.650 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[ERROR] 2022-06-09 13:24:05.908 [restartedMain] HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'M1074035'@'localhost' (using password: NO)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:121) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330) ~[spring-jdbc-5.3.20.jar:5.3.20]
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:162) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateDefaultDdlAutoProvider.getDefaultDdlAuto(HibernateDefaultDdlAutoProvider.java:42) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.lambda$getVendorProperties$1(HibernateJpaConfiguration.java:130) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:41) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineDdlAuto(HibernateProperties.java:143) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.getAdditionalProperties(HibernateProperties.java:103) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineHibernateProperties(HibernateProperties.java:95) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:132) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:132) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) [spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) [spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) [spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
+	at com.mindtree.calldetails.CallDetailsServiceApplication.main(CallDetailsServiceApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.0.jar:2.7.0]
+[INFO ] 2022-06-09 13:24:05.942 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-09 13:24:05.982 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+[INFO ] 2022-06-09 13:24:06.116 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-06-09 13:24:06.190 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[ERROR] 2022-06-09 13:24:07.212 [restartedMain] HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'M1074035'@'localhost' (using password: NO)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:121) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) [spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) [spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) [spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
+	at com.mindtree.calldetails.CallDetailsServiceApplication.main(CallDetailsServiceApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.0.jar:2.7.0]
+[WARN ] 2022-06-09 13:24:07.214 [restartedMain] JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+java.sql.SQLException: Access denied for user 'M1074035'@'localhost' (using password: NO)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:121) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) [spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) [spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) [spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
+	at com.mindtree.calldetails.CallDetailsServiceApplication.main(CallDetailsServiceApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.0.jar:2.7.0]
+[ERROR] 2022-06-09 13:24:07.217 [restartedMain] LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[WARN ] 2022-06-09 13:24:07.218 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[INFO ] 2022-06-09 13:24:07.222 [restartedMain] StandardService - Stopping service [Tomcat]
+[INFO ] 2022-06-09 13:24:07.233 [restartedMain] ConditionEvaluationReportLoggingListener - 
 
-Using generated security password: 202460b9-aea7-46dd-ae62-6c69bb67922c
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[INFO ] 2022-06-05 14:51:09.521 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a85f3d5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6877cd02, org.springframework.security.web.context.SecurityContextPersistenceFilter@4375f826, org.springframework.security.web.header.HeaderWriterFilter@54cc8798, org.springframework.security.web.csrf.CsrfFilter@6cf3e492, org.springframework.security.web.authentication.logout.LogoutFilter@25a6e868, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@9796372, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1925645e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7bd0547d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@356ce99e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@412e1d63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c7da8de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15365ed6, org.springframework.security.web.session.SessionManagementFilter@1f80bc9d, org.springframework.security.web.access.ExceptionTranslationFilter@374e0f68, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a58b016]
-[WARN ] 2022-06-05 14:51:09.549 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
-[INFO ] 2022-06-05 14:51:09.562 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-05 14:51:09.580 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
-[INFO ] 2022-06-05 15:02:32.654 [RMI TCP Connection(21)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[INFO ] 2022-06-05 15:02:32.692 [RMI TCP Connection(21)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-06-05 15:02:32.695 [RMI TCP Connection(21)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 2022-06-05 15:02:32.705 [RMI TCP Connection(21)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 2022-06-06 12:16:01.955 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
-[INFO ] 2022-06-06 12:16:02.222 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 2022-06-06 12:16:02.222 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 2022-06-06 12:16:07.093 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-06-06 12:16:07.267 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 146 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-06-06 12:16:12.697 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
-[INFO ] 2022-06-06 12:16:12.959 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-06 12:16:12.965 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2022-06-06 12:16:12.965 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-[INFO ] 2022-06-06 12:16:14.753 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2022-06-06 12:16:14.754 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12529 ms
-[INFO ] 2022-06-06 12:16:16.075 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 2022-06-06 12:16:17.202 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 2022-06-06 12:16:17.327 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-06-06 12:16:17.529 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-[INFO ] 2022-06-06 12:16:18.072 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-06-06 12:16:19.391 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[INFO ] 2022-06-06 12:16:20.369 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-06-06 12:16:20.384 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-06-06 12:16:21.493 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[WARN ] 2022-06-06 12:16:25.998 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
-[INFO ] 2022-06-06 12:16:26.045 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-06 12:16:26.094 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
-[INFO ] 2022-06-06 12:17:34.139 [http-nio-1001-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 2022-06-06 12:17:34.139 [http-nio-1001-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-06-06 12:17:34.141 [http-nio-1001-exec-1] DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 2022-06-06 14:06:02.116 [RMI TCP Connection(139)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[INFO ] 2022-06-06 14:06:02.248 [RMI TCP Connection(139)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-06-06 14:06:02.266 [RMI TCP Connection(139)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 2022-06-06 14:06:02.279 [RMI TCP Connection(139)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 2022-06-06 14:06:08.866 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
-[INFO ] 2022-06-06 14:06:09.046 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 2022-06-06 14:06:09.048 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 2022-06-06 14:06:10.140 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-06-06 14:06:10.240 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-06-06 14:06:12.544 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
-[INFO ] 2022-06-06 14:06:12.569 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-06 14:06:12.570 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2022-06-06 14:06:12.570 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-[INFO ] 2022-06-06 14:06:12.742 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2022-06-06 14:06:12.742 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3693 ms
-[INFO ] 2022-06-06 14:06:12.896 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 2022-06-06 14:06:14.555 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 2022-06-06 14:06:14.628 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-06-06 14:06:14.724 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-[INFO ] 2022-06-06 14:06:16.036 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-06-06 14:06:16.265 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[INFO ] 2022-06-06 14:06:17.059 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-06-06 14:06:17.073 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-06-06 14:06:18.575 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[WARN ] 2022-06-06 14:06:20.068 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
-[INFO ] 2022-06-06 14:06:20.091 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-06 14:06:20.123 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
-[INFO ] 2022-06-06 14:07:17.536 [http-nio-1001-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 2022-06-06 14:07:17.536 [http-nio-1001-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-06-06 14:07:17.537 [http-nio-1001-exec-1] DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 2022-06-06 14:38:48.996 [RMI TCP Connection(43)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[INFO ] 2022-06-06 14:38:49.036 [RMI TCP Connection(43)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-06-06 14:38:49.040 [RMI TCP Connection(43)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 2022-06-06 14:38:49.047 [RMI TCP Connection(43)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
-[ERROR] 2022-06-08 15:03:52.902 [restartedMain] LoggingFailureAnalysisReporter - 
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-06-09 13:24:07.250 [restartedMain] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
+	at com.mindtree.calldetails.CallDetailsServiceApplication.main(CallDetailsServiceApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.0.jar:2.7.0]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 21 more
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 21 more
+[INFO ] 2022-06-09 13:26:07.394 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2022-06-09 13:26:07.457 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-06-09 13:26:07.457 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-06-09 13:26:09.020 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-09 13:26:09.139 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-09 13:26:09.327 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
+[INFO ] 2022-06-09 13:26:09.797 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+[INFO ] 2022-06-09 13:26:09.805 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-09 13:26:09.805 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-09 13:26:09.805 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-09 13:26:09.928 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-09 13:26:09.928 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2470 ms
+[INFO ] 2022-06-09 13:26:10.019 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-06-09 13:26:10.250 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-06-09 13:26:10.285 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-09 13:26:10.325 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+[INFO ] 2022-06-09 13:26:10.459 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-06-09 13:26:10.620 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-09 13:26:11.084 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-09 13:26:11.091 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-09 13:26:11.375 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-06-09 13:26:11.633 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2022-06-09 13:26:12.017 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-09 13:26:12.066 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-09 13:26:12.086 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+[INFO ] 2022-06-09 13:26:12.087 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:1001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-09 13:26:16.484 [http-nio-1001-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-09 13:26:16.484 [http-nio-1001-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-09 13:26:16.485 [http-nio-1001-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-06-09 13:30:02.029 [Thread-6] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-1001
+[INFO ] 2022-06-09 13:30:02.038 [Thread-6] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-09 13:30:02.040 [Thread-6] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-06-09 13:30:02.045 [Thread-6] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2022-06-09 13:30:02.626 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-09 13:30:02.633 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-09 13:30:02.687 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
+[INFO ] 2022-06-09 13:30:02.758 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+[INFO ] 2022-06-09 13:30:02.758 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-09 13:30:02.759 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-09 13:30:02.759 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-09 13:30:02.794 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-09 13:30:02.794 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 405 ms
+[INFO ] 2022-06-09 13:30:02.819 [restartedMain] HikariDataSource - HikariPool-2 - Starting...
+[INFO ] 2022-06-09 13:30:02.838 [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
+[INFO ] 2022-06-09 13:30:02.841 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-09 13:30:02.844 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-09 13:30:02.868 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-09 13:30:02.868 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-09 13:30:02.908 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-06-09 13:30:02.983 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2022-06-09 13:30:03.258 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-09 13:30:03.275 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-09 13:30:03.280 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+[INFO ] 2022-06-09 13:30:03.280 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='15s', ttl='null', http='http://localhost:1001${management.server.servlet.context-path}/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-09 13:30:03.401 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-09 13:30:06.195 [RMI TCP Connection(13)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-09 13:30:06.243 [RMI TCP Connection(13)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-1001
+[INFO ] 2022-06-09 13:30:06.251 [RMI TCP Connection(13)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-09 13:30:06.252 [RMI TCP Connection(13)-127.0.0.1] HikariDataSource - HikariPool-2 - Shutdown initiated...
+[INFO ] 2022-06-09 13:30:06.255 [RMI TCP Connection(13)-127.0.0.1] HikariDataSource - HikariPool-2 - Shutdown completed.
+[INFO ] 2022-06-09 13:30:25.908 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2022-06-09 13:30:25.978 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-06-09 13:30:25.979 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-06-09 13:30:26.532 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-09 13:30:26.641 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-09 13:30:26.830 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
+[INFO ] 2022-06-09 13:30:27.320 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+[INFO ] 2022-06-09 13:30:27.328 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-09 13:30:27.329 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-09 13:30:27.329 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-09 13:30:27.460 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-09 13:30:27.460 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1481 ms
+[INFO ] 2022-06-09 13:30:27.551 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-06-09 13:30:27.775 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-06-09 13:30:27.814 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-09 13:30:27.853 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+[INFO ] 2022-06-09 13:30:27.989 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-06-09 13:30:28.093 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-09 13:30:28.519 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-09 13:30:28.526 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-09 13:30:28.784 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-06-09 13:30:29.044 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2022-06-09 13:30:29.428 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-09 13:30:29.495 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-09 13:30:29.515 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+[INFO ] 2022-06-09 13:30:29.517 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='15s', ttl='null', http='http://localhost:1001${management.server.servlet.context-path}/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[WARN ] 2022-06-09 14:56:09.735 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m46s717ms552µs).
+[INFO ] 2022-06-10 10:55:05.988 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2022-06-10 10:55:07.137 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-06-10 10:55:07.137 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-06-10 10:55:08.313 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-10 10:55:08.516 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 191 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-10 10:55:08.840 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
+[INFO ] 2022-06-10 10:55:09.721 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+[INFO ] 2022-06-10 10:55:09.734 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 10:55:09.734 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-10 10:55:09.735 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-10 10:55:09.935 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-10 10:55:09.935 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2797 ms
+[INFO ] 2022-06-10 10:55:10.087 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-06-10 10:55:10.412 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-06-10 10:55:10.469 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-10 10:55:10.529 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+[INFO ] 2022-06-10 10:55:10.775 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-06-10 10:55:10.993 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-10 10:55:11.634 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-10 10:55:11.646 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-10 10:55:12.096 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-10 10:55:12.526 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-10 10:55:13.301 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-10 10:55:13.388 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 10:55:13.421 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+[INFO ] 2022-06-10 10:55:13.424 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:1001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-10 10:55:21.838 [http-nio-1001-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-10 10:55:21.838 [http-nio-1001-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-10 10:55:21.839 [http-nio-1001-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-06-10 11:08:38.195 [Thread-1] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-1001
+[INFO ] 2022-06-10 11:08:38.271 [Thread-1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-10 11:08:38.276 [Thread-1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-06-10 11:08:38.289 [Thread-1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[ERROR] 2022-06-10 11:08:38.969 [restartedMain] LoggingFailureAnalysisReporter - 
 
 ***************************
 APPLICATION FAILED TO START
@@ -109,720 +403,147 @@ Add a spring.config.import=consul: property to your configuration.
 	To disable this check, set spring.cloud.consul.config.enabled=false or 
 	spring.cloud.consul.config.import-check.enabled=false.
 
-[ERROR] 2022-06-08 15:26:09.118 [restartedMain] SpringApplication - Application run failed
-java.lang.IllegalStateException: Unable to load config data from 'optional:configserver:http://localhost:8500'
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:141) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.resolve(StandardConfigDataLocationResolver.java:119) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.lambda$resolve$1(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:107) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:105) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:97) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:116) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:240) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:227) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:94) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:87) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66) ~[spring-boot-2.7.0.jar:2.7.0]
-	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
-	at com.mindtree.calldetails.CallDetailsServiceApplication.main(CallDetailsServiceApplication.java:10) [classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.0.jar:2.7.0]
-Caused by: java.lang.IllegalStateException: File extension is not known to any PropertySourceLoader. If the location is meant to reference a directory, it must end in '/' or File.separator
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferencesForFile(StandardConfigDataLocationResolver.java:229) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:138) ~[spring-boot-2.7.0.jar:2.7.0]
-	... 36 more
-[ERROR] 2022-06-08 15:27:03.659 [restartedMain] LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Config data resource '[ConsulConfigDataResource@757c1f12 context = '/localhost:8500/', optional = true, properties = [ConsulConfigProperties@444e6f45 enabled = true, prefixes = list['config'], defaultContext = 'application', profileSeparator = '::', format = YAML, dataKey = 'data', aclToken = [null], watch = [ConsulConfigProperties.Watch@68a8c58d waitTime = 55, enabled = true, delay = 1000], failFast = true, name = 'CallDetailsMS'], profile = [null]]' via location 'consul:http://localhost:8500' does not exist
-
-Action:
-
-Check that the value 'consul:http://localhost:8500' at class path resource [application.yml] - 18:7 is correct, or prefix it with 'optional:'
-
-[ERROR] 2022-06-08 15:27:41.456 [restartedMain] SpringApplication - Application run failed
-java.lang.IllegalStateException: Unable to load config data from 'http://localhost:8500'
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:141) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.resolve(StandardConfigDataLocationResolver.java:119) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.lambda$resolve$1(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:107) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:105) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:97) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:116) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:240) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:227) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:94) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:87) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66) ~[spring-boot-2.7.0.jar:2.7.0]
-	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
-	at com.mindtree.calldetails.CallDetailsServiceApplication.main(CallDetailsServiceApplication.java:10) [classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.0.jar:2.7.0]
-Caused by: java.lang.IllegalStateException: File extension is not known to any PropertySourceLoader. If the location is meant to reference a directory, it must end in '/' or File.separator
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferencesForFile(StandardConfigDataLocationResolver.java:229) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:138) ~[spring-boot-2.7.0.jar:2.7.0]
-	... 36 more
-[ERROR] 2022-06-08 15:28:45.374 [restartedMain] SpringApplication - Application run failed
-java.lang.IllegalStateException: Unable to load config data from 'configserver:http://localhost:8500'
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:141) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.resolve(StandardConfigDataLocationResolver.java:119) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.lambda$resolve$1(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:107) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:105) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:97) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:116) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:240) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:227) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:94) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:87) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66) ~[spring-boot-2.7.0.jar:2.7.0]
-	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
-	at com.mindtree.calldetails.CallDetailsServiceApplication.main(CallDetailsServiceApplication.java:10) [classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.0.jar:2.7.0]
-Caused by: java.lang.IllegalStateException: File extension is not known to any PropertySourceLoader. If the location is meant to reference a directory, it must end in '/' or File.separator
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferencesForFile(StandardConfigDataLocationResolver.java:229) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:138) ~[spring-boot-2.7.0.jar:2.7.0]
-	... 36 more
-[ERROR] 2022-06-08 15:30:35.442 [restartedMain] SpringApplication - Application run failed
-java.lang.IllegalStateException: Unable to load config data from 'classpath:"consul:http://localhost:8500"'
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:141) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.resolve(StandardConfigDataLocationResolver.java:119) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.lambda$resolve$1(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:107) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:105) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:97) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:116) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:240) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:227) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:94) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:87) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66) ~[spring-boot-2.7.0.jar:2.7.0]
-	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
-	at com.mindtree.calldetails.CallDetailsServiceApplication.main(CallDetailsServiceApplication.java:10) [classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.0.jar:2.7.0]
-Caused by: java.lang.IllegalStateException: File extension is not known to any PropertySourceLoader. If the location is meant to reference a directory, it must end in '/' or File.separator
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferencesForFile(StandardConfigDataLocationResolver.java:229) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:138) ~[spring-boot-2.7.0.jar:2.7.0]
-	... 36 more
-[ERROR] 2022-06-08 15:34:56.971 [restartedMain] LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Config data resource '[ConsulConfigDataResource@2e47e36c context = '/localhost:8500/', optional = true, properties = [ConsulConfigProperties@5bb9ee20 enabled = true, prefixes = list['config'], defaultContext = 'application', profileSeparator = '::', format = YAML, dataKey = 'data', aclToken = [null], watch = [ConsulConfigProperties.Watch@4beb5058 waitTime = 55, enabled = true, delay = 1000], failFast = true, name = 'CallDetailsMS'], profile = [null]]' via location 'consul:http://localhost:8500' does not exist
-
-Action:
-
-Check that the value 'consul:http://localhost:8500' at class path resource [application.yml] - 18:9 is correct, or prefix it with 'optional:'
-
-[ERROR] 2022-06-08 15:38:13.864 [restartedMain] LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-No spring.config.import property has been defined
-
-Action:
-
-Add a spring.config.import=configserver: property to your configuration.
-	If configuration is not required add spring.config.import=optional:configserver: instead.
-	To disable this check, set spring.cloud.config.enabled=false or 
-	spring.cloud.config.import-check.enabled=false.
-
-[ERROR] 2022-06-08 15:39:21.836 [restartedMain] SpringApplication - Application run failed
-java.lang.IllegalStateException: Unable to load config data from 'optional:configserver:'
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:141) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.resolve(StandardConfigDataLocationResolver.java:119) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.lambda$resolve$1(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:107) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:105) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:97) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:116) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:240) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:227) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:94) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:87) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66) ~[spring-boot-2.7.0.jar:2.7.0]
-	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
-	at com.mindtree.calldetails.CallDetailsServiceApplication.main(CallDetailsServiceApplication.java:10) [classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.0.jar:2.7.0]
-Caused by: java.lang.IllegalStateException: File extension is not known to any PropertySourceLoader. If the location is meant to reference a directory, it must end in '/' or File.separator
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferencesForFile(StandardConfigDataLocationResolver.java:229) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:138) ~[spring-boot-2.7.0.jar:2.7.0]
-	... 36 more
-[ERROR] 2022-06-08 15:40:23.213 [restartedMain] SpringApplication - Application run failed
-java.lang.IllegalStateException: Unable to load config data from 'configserver:http://localhost:8500'
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:141) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.resolve(StandardConfigDataLocationResolver.java:119) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.lambda$resolve$1(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:126) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:115) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataLocationResolvers.resolve(ConfigDataLocationResolvers.java:107) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:105) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolve(ConfigDataImporter.java:97) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:116) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:240) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:227) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:94) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:87) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66) ~[spring-boot-2.7.0.jar:2.7.0]
-	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
-	at com.mindtree.calldetails.CallDetailsServiceApplication.main(CallDetailsServiceApplication.java:10) [classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.0.jar:2.7.0]
-Caused by: java.lang.IllegalStateException: File extension is not known to any PropertySourceLoader. If the location is meant to reference a directory, it must end in '/' or File.separator
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferencesForFile(StandardConfigDataLocationResolver.java:229) ~[spring-boot-2.7.0.jar:2.7.0]
-	at org.springframework.boot.context.config.StandardConfigDataLocationResolver.getReferences(StandardConfigDataLocationResolver.java:138) ~[spring-boot-2.7.0.jar:2.7.0]
-	... 36 more
-[ERROR] 2022-06-08 15:47:56.505 [restartedMain] LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-No spring.config.import property has been defined
-
-Action:
-
-Add a spring.config.import=consul: property to your configuration.
-	If configuration is not required add spring.config.import=optional:consul: instead.
-	To disable this check, set spring.cloud.consul.config.enabled=false or 
-	spring.cloud.consul.config.import-check.enabled=false.
-
-[INFO ] 2022-06-08 15:49:48.791 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
-[INFO ] 2022-06-08 15:49:49.980 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 2022-06-08 15:49:49.980 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 2022-06-08 15:49:51.176 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-06-08 15:49:51.274 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-06-08 15:49:51.585 [restartedMain] GenericScope - BeanFactory id=695c0891-c251-3759-90fa-043919ad3cef
-[INFO ] 2022-06-08 15:49:52.524 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
-[INFO ] 2022-06-08 15:49:52.541 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 15:49:52.542 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2022-06-08 15:49:52.542 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-[INFO ] 2022-06-08 15:49:52.746 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2022-06-08 15:49:52.746 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2765 ms
-[INFO ] 2022-06-08 15:49:52.940 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
-[WARN ] 2022-06-08 15:49:52.946 [restartedMain] DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-[INFO ] 2022-06-08 15:49:53.456 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 2022-06-08 15:49:53.526 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-06-08 15:49:53.641 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-[INFO ] 2022-06-08 15:49:53.990 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-06-08 15:49:54.224 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[INFO ] 2022-06-08 15:49:55.149 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-06-08 15:49:55.161 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-06-08 15:49:55.641 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-06-08 15:49:56.128 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 2022-06-08 15:49:56.649 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 15:49:56.690 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
-[INFO ] 2022-06-08 15:50:36.929 [RMI TCP Connection(10)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[INFO ] 2022-06-08 15:50:36.970 [RMI TCP Connection(10)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-06-08 15:50:36.974 [RMI TCP Connection(10)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 2022-06-08 15:50:37.011 [RMI TCP Connection(10)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 2022-06-08 15:52:21.612 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
-[INFO ] 2022-06-08 15:52:22.777 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 2022-06-08 15:52:22.777 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 2022-06-08 15:52:24.009 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-06-08 15:52:24.086 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-06-08 15:52:27.498 [restartedMain] GenericScope - BeanFactory id=695c0891-c251-3759-90fa-043919ad3cef
-[INFO ] 2022-06-08 15:52:28.527 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
-[INFO ] 2022-06-08 15:52:28.546 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 15:52:28.547 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2022-06-08 15:52:28.547 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-[INFO ] 2022-06-08 15:52:28.836 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2022-06-08 15:52:28.836 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6058 ms
-[INFO ] 2022-06-08 15:52:30.022 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 2022-06-08 15:52:30.375 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 2022-06-08 15:52:30.433 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-06-08 15:52:30.499 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-[INFO ] 2022-06-08 15:52:30.748 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-06-08 15:52:30.929 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[INFO ] 2022-06-08 15:52:31.598 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-06-08 15:52:31.606 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-06-08 15:52:32.028 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-06-08 15:52:32.620 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 2022-06-08 15:52:33.227 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 15:52:33.262 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
-[INFO ] 2022-06-08 16:04:26.934 [Thread-6] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-06-08 16:04:26.939 [Thread-6] HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 2022-06-08 16:04:26.958 [Thread-6] HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 2022-06-08 16:04:27.915 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-06-08 16:04:27.926 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-06-08 16:04:27.991 [restartedMain] GenericScope - BeanFactory id=695c0891-c251-3759-90fa-043919ad3cef
-[INFO ] 2022-06-08 16:04:28.110 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
-[INFO ] 2022-06-08 16:04:28.111 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:04:28.111 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2022-06-08 16:04:28.112 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-[INFO ] 2022-06-08 16:04:28.178 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2022-06-08 16:04:28.179 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 558 ms
-[INFO ] 2022-06-08 16:04:28.223 [restartedMain] HikariDataSource - HikariPool-2 - Starting...
-[INFO ] 2022-06-08 16:04:28.255 [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
-[INFO ] 2022-06-08 16:04:28.260 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-06-08 16:04:28.266 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[INFO ] 2022-06-08 16:04:28.308 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-06-08 16:04:28.308 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-06-08 16:04:28.398 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-06-08 16:04:28.551 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 2022-06-08 16:04:28.870 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:04:28.877 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
-[INFO ] 2022-06-08 16:04:29.099 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 2022-06-08 16:04:30.037 [Thread-9] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-06-08 16:04:30.038 [Thread-9] HikariDataSource - HikariPool-2 - Shutdown initiated...
-[INFO ] 2022-06-08 16:04:30.045 [Thread-9] HikariDataSource - HikariPool-2 - Shutdown completed.
-[INFO ] 2022-06-08 16:04:30.728 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-06-08 16:04:30.743 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-06-08 16:04:30.820 [restartedMain] GenericScope - BeanFactory id=695c0891-c251-3759-90fa-043919ad3cef
-[INFO ] 2022-06-08 16:04:30.953 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
-[INFO ] 2022-06-08 16:04:30.954 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:04:30.954 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2022-06-08 16:04:30.955 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-[INFO ] 2022-06-08 16:04:31.037 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2022-06-08 16:04:31.037 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 643 ms
-[INFO ] 2022-06-08 16:04:31.097 [restartedMain] HikariDataSource - HikariPool-3 - Starting...
-[INFO ] 2022-06-08 16:04:31.132 [restartedMain] HikariDataSource - HikariPool-3 - Start completed.
-[INFO ] 2022-06-08 16:04:31.137 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-06-08 16:04:31.147 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[INFO ] 2022-06-08 16:04:31.180 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-06-08 16:04:31.180 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-06-08 16:04:31.248 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-06-08 16:04:31.369 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 2022-06-08 16:04:31.698 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:04:31.707 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
-[INFO ] 2022-06-08 16:04:31.945 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 2022-06-08 16:08:37.995 [Thread-15] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-06-08 16:08:37.996 [Thread-15] HikariDataSource - HikariPool-3 - Shutdown initiated...
-[INFO ] 2022-06-08 16:08:38.000 [Thread-15] HikariDataSource - HikariPool-3 - Shutdown completed.
-[INFO ] 2022-06-08 16:08:38.732 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-06-08 16:08:38.742 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-06-08 16:08:38.792 [restartedMain] GenericScope - BeanFactory id=695c0891-c251-3759-90fa-043919ad3cef
-[INFO ] 2022-06-08 16:08:38.888 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
-[INFO ] 2022-06-08 16:08:38.889 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:08:38.889 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2022-06-08 16:08:38.889 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-[INFO ] 2022-06-08 16:08:38.944 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2022-06-08 16:08:38.944 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 467 ms
-[INFO ] 2022-06-08 16:08:38.983 [restartedMain] HikariDataSource - HikariPool-4 - Starting...
-[INFO ] 2022-06-08 16:08:39.014 [restartedMain] HikariDataSource - HikariPool-4 - Start completed.
-[INFO ] 2022-06-08 16:08:39.018 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-06-08 16:08:39.025 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[INFO ] 2022-06-08 16:08:39.062 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-06-08 16:08:39.063 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-06-08 16:08:39.158 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-06-08 16:08:39.305 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 2022-06-08 16:08:39.564 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:08:39.572 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
-[INFO ] 2022-06-08 16:08:39.788 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 2022-06-08 16:11:53.763 [RMI TCP Connection(29)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[INFO ] 2022-06-08 16:11:53.819 [RMI TCP Connection(29)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-06-08 16:11:53.820 [RMI TCP Connection(29)-127.0.0.1] HikariDataSource - HikariPool-4 - Shutdown initiated...
-[INFO ] 2022-06-08 16:11:53.829 [RMI TCP Connection(29)-127.0.0.1] HikariDataSource - HikariPool-4 - Shutdown completed.
-[INFO ] 2022-06-08 16:12:27.148 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
-[INFO ] 2022-06-08 16:12:27.300 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 2022-06-08 16:12:27.300 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 2022-06-08 16:12:30.603 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-06-08 16:12:30.834 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 213 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-06-08 16:12:31.188 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
-[INFO ] 2022-06-08 16:12:32.142 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
-[INFO ] 2022-06-08 16:12:32.157 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:12:32.157 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2022-06-08 16:12:32.158 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-[INFO ] 2022-06-08 16:12:32.391 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2022-06-08 16:12:32.392 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5089 ms
-[INFO ] 2022-06-08 16:12:32.556 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 2022-06-08 16:12:32.932 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 2022-06-08 16:12:32.994 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-06-08 16:12:33.072 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-[INFO ] 2022-06-08 16:12:33.326 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-06-08 16:12:33.521 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[INFO ] 2022-06-08 16:12:35.398 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-06-08 16:12:35.415 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-06-08 16:12:35.945 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[WARN ] 2022-06-08 16:12:36.427 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
-[WARN ] 2022-06-08 16:12:37.361 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-[INFO ] 2022-06-08 16:12:37.448 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:12:37.483 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
-[INFO ] 2022-06-08 16:12:37.486 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:1001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
-[INFO ] 2022-06-08 16:12:41.864 [http-nio-1001-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 2022-06-08 16:12:41.864 [http-nio-1001-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-06-08 16:12:41.866 [http-nio-1001-exec-1] DispatcherServlet - Completed initialization in 2 ms
-[INFO ] 2022-06-08 16:13:57.515 [RMI TCP Connection(11)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[INFO ] 2022-06-08 16:13:57.578 [RMI TCP Connection(11)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-1001
-[INFO ] 2022-06-08 16:13:57.616 [RMI TCP Connection(11)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-06-08 16:13:57.622 [RMI TCP Connection(11)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 2022-06-08 16:13:57.638 [RMI TCP Connection(11)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 2022-06-08 16:14:19.179 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
-[INFO ] 2022-06-08 16:14:19.365 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 2022-06-08 16:14:19.365 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 2022-06-08 16:14:20.437 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-06-08 16:14:20.752 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 298 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-06-08 16:14:21.176 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
-[INFO ] 2022-06-08 16:14:23.353 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
-[INFO ] 2022-06-08 16:14:23.367 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:14:23.368 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2022-06-08 16:14:23.368 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-[INFO ] 2022-06-08 16:14:23.636 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2022-06-08 16:14:23.636 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4270 ms
-[INFO ] 2022-06-08 16:14:23.815 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 2022-06-08 16:14:25.276 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 2022-06-08 16:14:25.348 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-06-08 16:14:25.436 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-[INFO ] 2022-06-08 16:14:26.764 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-06-08 16:14:28.016 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[INFO ] 2022-06-08 16:14:28.887 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-06-08 16:14:28.900 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-06-08 16:14:30.429 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[WARN ] 2022-06-08 16:14:30.969 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
-[WARN ] 2022-06-08 16:14:31.887 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-[INFO ] 2022-06-08 16:14:31.982 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:14:32.017 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
-[INFO ] 2022-06-08 16:14:32.019 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:1001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
-[INFO ] 2022-06-08 16:14:40.997 [http-nio-1001-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 2022-06-08 16:14:40.997 [http-nio-1001-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-06-08 16:14:40.999 [http-nio-1001-exec-1] DispatcherServlet - Completed initialization in 2 ms
-[INFO ] 2022-06-08 16:27:06.474 [RMI TCP Connection(25)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[INFO ] 2022-06-08 16:27:06.540 [RMI TCP Connection(25)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-1001
-[INFO ] 2022-06-08 16:27:06.566 [RMI TCP Connection(25)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-06-08 16:27:06.571 [RMI TCP Connection(25)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 2022-06-08 16:27:06.584 [RMI TCP Connection(25)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 2022-06-08 16:27:32.820 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
-[INFO ] 2022-06-08 16:27:33.009 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 2022-06-08 16:27:33.010 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 2022-06-08 16:27:34.390 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-06-08 16:27:34.662 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 255 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-06-08 16:27:35.030 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
-[INFO ] 2022-06-08 16:27:36.901 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
-[INFO ] 2022-06-08 16:27:36.914 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:27:36.915 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2022-06-08 16:27:36.915 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-[INFO ] 2022-06-08 16:27:37.096 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2022-06-08 16:27:37.096 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4084 ms
-[INFO ] 2022-06-08 16:27:37.241 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 2022-06-08 16:27:38.680 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 2022-06-08 16:27:38.744 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-06-08 16:27:38.839 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-[INFO ] 2022-06-08 16:27:39.193 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-06-08 16:27:40.414 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[INFO ] 2022-06-08 16:27:42.389 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-06-08 16:27:42.403 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-06-08 16:27:42.924 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[WARN ] 2022-06-08 16:27:43.489 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
-[WARN ] 2022-06-08 16:27:44.295 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-[INFO ] 2022-06-08 16:27:44.399 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
-[INFO ] 2022-06-08 16:27:44.439 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
-[INFO ] 2022-06-08 16:27:44.442 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:1001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
-[INFO ] 2022-06-08 16:27:46.354 [http-nio-1001-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 2022-06-08 16:27:46.354 [http-nio-1001-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-06-08 16:27:46.356 [http-nio-1001-exec-1] DispatcherServlet - Completed initialization in 2 ms
-[WARN ] 2022-06-08 16:36:18.030 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application::default/'. Message: OperationException(statusCode=500, statusMessage='Internal Server Error', statusContent='No cluster leader')
-[WARN ] 2022-06-08 16:36:18.032 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application/'. Message: OperationException(statusCode=500, statusMessage='Internal Server Error', statusContent='No cluster leader')
-[INFO ] 2022-06-08 16:36:18.230 [catalogWatchTaskScheduler-1] RetryExec - I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8500: An established connection was aborted by the software in your host machine
-[INFO ] 2022-06-08 16:36:18.230 [catalogWatchTaskScheduler-1] RetryExec - Retrying request to {}->http://localhost:8500
-[ERROR] 2022-06-08 16:36:18.246 [catalogWatchTaskScheduler-1] ConsulDiscoveryClient - Error watching Consul CatalogServices
-com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.transport.AbstractHttpTransport.makeGetRequest(AbstractHttpTransport.java:36) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.v1.ConsulRawClient.makeGetRequest(ConsulRawClient.java:139) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.v1.catalog.CatalogConsulClient.getCatalogServices(CatalogConsulClient.java:143) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.v1.ConsulClient.getCatalogServices(ConsulClient.java:400) ~[consul-api-1.4.5.jar:?]
-	at org.springframework.cloud.consul.discovery.ConsulCatalogWatch.catalogServicesWatch(ConsulCatalogWatch.java:130) ~[spring-cloud-consul-discovery-3.1.1.jar:3.1.1]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.20.jar:5.3.20]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
-	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
-	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
-	... 12 more
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
-	at sun.nio.ch.Net.pollConnectNow(Net.java:669) ~[?:?]
-	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
-	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[?:?]
-	at java.net.Socket.connect(Socket.java:645) ~[?:?]
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
-	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
-	... 12 more
-[WARN ] 2022-06-08 16:36:19.055 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/CallDetailsMS::default/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-[WARN ] 2022-06-08 16:36:19.057 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/CallDetailsMS/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-[WARN ] 2022-06-08 16:36:19.059 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application::default/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-[WARN ] 2022-06-08 16:36:19.085 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-[ERROR] 2022-06-08 16:36:19.290 [catalogWatchTaskScheduler-1] ConsulDiscoveryClient - Error watching Consul CatalogServices
-com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.transport.AbstractHttpTransport.makeGetRequest(AbstractHttpTransport.java:36) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.v1.ConsulRawClient.makeGetRequest(ConsulRawClient.java:139) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.v1.catalog.CatalogConsulClient.getCatalogServices(CatalogConsulClient.java:143) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.v1.ConsulClient.getCatalogServices(ConsulClient.java:400) ~[consul-api-1.4.5.jar:?]
-	at org.springframework.cloud.consul.discovery.ConsulCatalogWatch.catalogServicesWatch(ConsulCatalogWatch.java:130) ~[spring-cloud-consul-discovery-3.1.1.jar:3.1.1]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.20.jar:5.3.20]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
-	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
-	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
-	... 12 more
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
-	at sun.nio.ch.Net.pollConnectNow(Net.java:669) ~[?:?]
-	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
-	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[?:?]
-	at java.net.Socket.connect(Socket.java:645) ~[?:?]
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
-	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
-	... 12 more
-[WARN ] 2022-06-08 16:36:20.101 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/CallDetailsMS::default/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-[WARN ] 2022-06-08 16:36:20.104 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/CallDetailsMS/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-[WARN ] 2022-06-08 16:36:20.106 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application::default/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-[WARN ] 2022-06-08 16:36:20.131 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-[ERROR] 2022-06-08 16:36:20.303 [catalogWatchTaskScheduler-1] ConsulDiscoveryClient - Error watching Consul CatalogServices
-com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.transport.AbstractHttpTransport.makeGetRequest(AbstractHttpTransport.java:36) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.v1.ConsulRawClient.makeGetRequest(ConsulRawClient.java:139) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.v1.catalog.CatalogConsulClient.getCatalogServices(CatalogConsulClient.java:143) ~[consul-api-1.4.5.jar:?]
-	at com.ecwid.consul.v1.ConsulClient.getCatalogServices(ConsulClient.java:400) ~[consul-api-1.4.5.jar:?]
-	at org.springframework.cloud.consul.discovery.ConsulCatalogWatch.catalogServicesWatch(ConsulCatalogWatch.java:130) ~[spring-cloud-consul-discovery-3.1.1.jar:3.1.1]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.20.jar:5.3.20]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
-	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
-	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
-	... 12 more
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
-	at sun.nio.ch.Net.pollConnectNow(Net.java:669) ~[?:?]
-	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
-	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[?:?]
-	at java.net.Socket.connect(Socket.java:645) ~[?:?]
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
-	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
-	... 12 more
-[INFO ] 2022-06-08 16:36:20.673 [RMI TCP Connection(19)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[INFO ] 2022-06-08 16:36:20.717 [RMI TCP Connection(19)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-1001
-[WARN ] 2022-06-08 16:36:20.731 [RMI TCP Connection(19)-127.0.0.1] CommonAnnotationBeanPostProcessor - Destroy method on bean with name 'consulAutoServiceRegistration' threw an exception: com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-[INFO ] 2022-06-08 16:36:20.737 [RMI TCP Connection(19)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-06-08 16:36:20.743 [RMI TCP Connection(19)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 2022-06-08 16:36:20.754 [RMI TCP Connection(19)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2022-06-10 11:08:42.230 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-10 11:08:42.248 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-10 11:08:42.378 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
+[INFO ] 2022-06-10 11:08:42.506 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+[INFO ] 2022-06-10 11:08:42.507 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 11:08:42.507 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-10 11:08:42.507 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-10 11:08:42.586 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-10 11:08:42.586 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1740 ms
+[INFO ] 2022-06-10 11:08:42.651 [restartedMain] HikariDataSource - HikariPool-2 - Starting...
+[INFO ] 2022-06-10 11:08:42.692 [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
+[INFO ] 2022-06-10 11:08:42.697 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-10 11:08:42.706 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-10 11:08:42.761 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-10 11:08:42.762 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-10 11:08:42.900 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-10 11:08:43.099 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-10 11:08:43.700 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-10 11:08:43.732 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 11:08:43.741 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+[INFO ] 2022-06-10 11:08:43.742 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:1001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-10 11:08:44.012 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-10 11:08:52.173 [http-nio-1001-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-10 11:08:52.173 [http-nio-1001-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-10 11:08:52.174 [http-nio-1001-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-06-10 11:15:06.234 [Thread-7] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-1001
+[INFO ] 2022-06-10 11:15:06.256 [Thread-7] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-10 11:15:06.256 [Thread-7] HikariDataSource - HikariPool-2 - Shutdown initiated...
+[INFO ] 2022-06-10 11:15:06.264 [Thread-7] HikariDataSource - HikariPool-2 - Shutdown completed.
+[INFO ] 2022-06-10 11:15:07.240 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-10 11:15:07.256 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-10 11:15:07.517 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
+[INFO ] 2022-06-10 11:15:08.031 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+[INFO ] 2022-06-10 11:15:08.033 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 11:15:08.033 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-10 11:15:08.034 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-10 11:15:08.181 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-10 11:15:08.181 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1313 ms
+[INFO ] 2022-06-10 11:15:08.262 [restartedMain] HikariDataSource - HikariPool-3 - Starting...
+[INFO ] 2022-06-10 11:15:08.311 [restartedMain] HikariDataSource - HikariPool-3 - Start completed.
+[INFO ] 2022-06-10 11:15:08.319 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-10 11:15:08.331 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-10 11:15:08.427 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-10 11:15:08.428 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-10 11:15:08.684 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-10 11:15:08.892 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-10 11:15:09.430 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-10 11:15:09.451 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 11:15:09.459 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+[INFO ] 2022-06-10 11:15:09.459 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:1001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-10 11:15:09.697 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-10 11:15:10.358 [Thread-16] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-1001
+[INFO ] 2022-06-10 11:15:10.370 [Thread-16] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-10 11:15:10.370 [Thread-16] HikariDataSource - HikariPool-3 - Shutdown initiated...
+[INFO ] 2022-06-10 11:15:10.375 [Thread-16] HikariDataSource - HikariPool-3 - Shutdown completed.
+[INFO ] 2022-06-10 11:15:11.000 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-10 11:15:11.007 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-10 11:15:11.105 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
+[INFO ] 2022-06-10 11:15:11.265 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+[INFO ] 2022-06-10 11:15:11.267 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 11:15:11.267 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-10 11:15:11.268 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-10 11:15:11.367 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-10 11:15:11.367 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 627 ms
+[INFO ] 2022-06-10 11:15:11.413 [restartedMain] HikariDataSource - HikariPool-4 - Starting...
+[INFO ] 2022-06-10 11:15:11.456 [restartedMain] HikariDataSource - HikariPool-4 - Start completed.
+[INFO ] 2022-06-10 11:15:11.461 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-10 11:15:11.467 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-10 11:15:11.501 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-10 11:15:11.501 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-10 11:15:11.567 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-10 11:15:11.699 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-10 11:15:12.217 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-10 11:15:12.235 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 11:15:12.243 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+[INFO ] 2022-06-10 11:15:12.244 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:1001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-10 11:15:12.473 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-10 11:15:17.226 [http-nio-1001-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-10 11:15:17.226 [http-nio-1001-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-10 11:15:17.227 [http-nio-1001-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-06-10 11:20:53.217 [Thread-22] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-1001
+[INFO ] 2022-06-10 11:20:53.235 [Thread-22] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-10 11:20:53.235 [Thread-22] HikariDataSource - HikariPool-4 - Shutdown initiated...
+[INFO ] 2022-06-10 11:20:53.241 [Thread-22] HikariDataSource - HikariPool-4 - Shutdown completed.
+[INFO ] 2022-06-10 11:20:54.128 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-10 11:20:54.138 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-10 11:20:54.215 [restartedMain] GenericScope - BeanFactory id=9f859818-6cba-39dc-b9bc-eeae18cdb9c4
+[INFO ] 2022-06-10 11:20:54.322 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+[INFO ] 2022-06-10 11:20:54.322 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 11:20:54.323 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-10 11:20:54.323 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-10 11:20:54.393 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-10 11:20:54.393 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 641 ms
+[INFO ] 2022-06-10 11:20:54.435 [restartedMain] HikariDataSource - HikariPool-5 - Starting...
+[INFO ] 2022-06-10 11:20:54.463 [restartedMain] HikariDataSource - HikariPool-5 - Start completed.
+[INFO ] 2022-06-10 11:20:54.467 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-10 11:20:54.473 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-10 11:20:54.502 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-10 11:20:54.502 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-10 11:20:54.573 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-10 11:20:54.711 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-10 11:20:55.242 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-10 11:20:55.263 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 11:20:55.272 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+[INFO ] 2022-06-10 11:20:55.273 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:1001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-10 11:20:55.515 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-10 11:21:02.579 [http-nio-1001-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-10 11:21:02.580 [http-nio-1001-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-10 11:21:02.581 [http-nio-1001-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-06-10 12:09:59.628 [RMI TCP Connection(90)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-10 12:09:59.664 [RMI TCP Connection(90)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-1001
+[INFO ] 2022-06-10 12:09:59.673 [RMI TCP Connection(90)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-10 12:09:59.674 [RMI TCP Connection(90)-127.0.0.1] HikariDataSource - HikariPool-5 - Shutdown initiated...
+[INFO ] 2022-06-10 12:09:59.681 [RMI TCP Connection(90)-127.0.0.1] HikariDataSource - HikariPool-5 - Shutdown completed.
+[INFO ] 2022-06-10 12:10:13.988 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2022-06-10 12:10:15.201 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-06-10 12:10:15.202 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-06-10 12:10:17.063 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-10 12:10:17.277 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 202 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-10 12:10:17.754 [restartedMain] GenericScope - BeanFactory id=8837b5b3-8e44-36b8-b7a0-683bbb48f41a
+[INFO ] 2022-06-10 12:10:19.032 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 1001 (http)
+[INFO ] 2022-06-10 12:10:19.046 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 12:10:19.047 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-10 12:10:19.047 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-10 12:10:19.275 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-10 12:10:19.275 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4072 ms
+[INFO ] 2022-06-10 12:10:19.901 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-06-10 12:10:20.271 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-06-10 12:10:20.326 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-10 12:10:20.395 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+[INFO ] 2022-06-10 12:10:20.625 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-06-10 12:10:20.796 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-10 12:10:21.528 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-10 12:10:21.537 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-10 12:10:22.244 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-10 12:10:26.179 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-10 12:10:26.740 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-10 12:10:26.755 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-10 12:10:26.887 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1001"]
+[INFO ] 2022-06-10 12:10:26.925 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1001 (http) with context path ''
+[INFO ] 2022-06-10 12:10:26.928 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='CallDetailsMS-1001', name='CallDetailsMS', tags=[], address='localhost', meta={secure=false}, port=1001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:1001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-10 12:10:27.300 [RMI TCP Connection(1)-127.0.0.1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-10 12:10:27.300 [RMI TCP Connection(1)-127.0.0.1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-10 12:10:27.303 [RMI TCP Connection(1)-127.0.0.1] DispatcherServlet - Completed initialization in 3 ms

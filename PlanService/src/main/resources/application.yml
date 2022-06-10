@@ -6,6 +6,8 @@ spring:
     name: PlanMS
   cloud:
     consul:
+      port: 8500
+      host: localhost
       discovery:
         hostname: localhost
       config:
