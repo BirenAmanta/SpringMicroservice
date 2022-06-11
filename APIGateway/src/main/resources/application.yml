@@ -1,0 +1,39 @@
+server:
+  port: 5001
+      
+spring:
+  application:
+    name: gatewayMS
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: CallDetailsMS
+        uri: lb://CallDetailsMS
+        predicates:
+        - Path=/calldetails/**
+      - id: CustomerMS
+        uri: lb://CustomerMS
+        predicates:
+        - Path=/customer/**
+      - id: FriendFamilyMS
+        uri: lb://FriendFamilyMS
+        predicates:
+        - Path=/friendfamily/**
+      - id: PlanMS
+        uri: lb://PlanMS
+        predicates:
+        - Path=/plan/**
+          
+       
+  config:
+    import: 'consul:'
+      
+      
+      
+      

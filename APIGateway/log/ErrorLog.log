@@ -1,0 +1,32 @@
+[INFO ] 2022-06-11 11:47:05.762 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2022-06-11 11:47:05.797 [restartedMain] ApiGatewayApplication - Starting ApiGatewayApplication using Java 16.0.2 on MT-5CD119LF0H with PID 13168 (D:\Spring\APIGateway\target\classes started by M1074035 in D:\Spring\APIGateway)
+[DEBUG] 2022-06-11 11:47:05.797 [restartedMain] ApiGatewayApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+[INFO ] 2022-06-11 11:47:05.798 [restartedMain] ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-06-11 11:47:05.833 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-06-11 11:47:05.836 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-06-11 11:47:06.663 [restartedMain] GenericScope - BeanFactory id=98ddd331-00a2-363b-b0a0-cfa8ecf544dc
+[INFO ] 2022-06-11 11:47:06.720 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-11 11:47:06.721 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-11 11:47:06.722 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-11 11:47:07.840 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+[INFO ] 2022-06-11 11:47:07.840 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+[INFO ] 2022-06-11 11:47:07.840 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+[INFO ] 2022-06-11 11:47:07.841 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2022-06-11 11:47:07.841 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+[INFO ] 2022-06-11 11:47:07.841 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+[INFO ] 2022-06-11 11:47:07.841 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+[INFO ] 2022-06-11 11:47:07.841 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+[INFO ] 2022-06-11 11:47:07.841 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+[INFO ] 2022-06-11 11:47:07.841 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2022-06-11 11:47:07.841 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2022-06-11 11:47:07.841 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2022-06-11 11:47:07.841 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2022-06-11 11:47:07.841 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2022-06-11 11:47:08.041 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-11 11:47:08.189 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2022-06-11 11:47:08.228 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-11 11:47:08.473 [restartedMain] NettyWebServer - Netty started on port 5001
+[INFO ] 2022-06-11 11:47:08.475 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='gatewayMS-5001', name='gatewayMS', tags=[], address='192.168.1.41', meta={secure=false}, port=5001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.1.41:5001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-11 11:47:08.740 [restartedMain] ApiGatewayApplication - Started ApiGatewayApplication in 3.641 seconds (JVM running for 4.584)
+[INFO ] 2022-06-11 11:53:32.557 [RMI TCP Connection(17)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-11 11:53:32.566 [RMI TCP Connection(17)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: gatewayMS-5001

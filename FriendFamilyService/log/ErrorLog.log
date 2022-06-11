@@ -1668,3 +1668,310 @@ Add a spring.config.import=consul: property to your configuration.
 [INFO ] 2022-06-10 12:21:17.598 [RMI TCP Connection(10)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 [INFO ] 2022-06-10 12:21:17.609 [RMI TCP Connection(10)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
 [INFO ] 2022-06-10 12:21:17.621 [RMI TCP Connection(10)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2022-06-11 09:54:54.367 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2022-06-11 09:54:55.469 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-06-11 09:54:55.469 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-06-11 09:54:56.511 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2022-06-11 09:54:56.591 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-06-11 09:54:56.591 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-06-11 09:54:56.866 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-11 09:54:58.117 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1232 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-11 09:54:58.412 [restartedMain] GenericScope - BeanFactory id=32ce7e08-741e-32b4-8d34-a96c8717b7bb
+[INFO ] 2022-06-11 09:54:59.551 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 10032 (http)
+[INFO ] 2022-06-11 09:54:59.566 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10032"]
+[INFO ] 2022-06-11 09:54:59.566 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-11 09:54:59.566 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-11 09:54:59.804 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-11 09:54:59.805 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4334 ms
+[INFO ] 2022-06-11 09:54:59.906 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-11 09:55:00.045 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-11 09:55:00.350 [restartedMain] GenericScope - BeanFactory id=32ce7e08-741e-32b4-8d34-a96c8717b7bb
+[INFO ] 2022-06-11 09:55:01.214 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 10031 (http)
+[INFO ] 2022-06-11 09:55:01.226 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10031"]
+[INFO ] 2022-06-11 09:55:01.227 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-11 09:55:01.227 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-11 09:55:01.415 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-06-11 09:55:01.459 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-11 09:55:01.459 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4867 ms
+[INFO ] 2022-06-11 09:55:01.725 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-06-11 09:55:01.772 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-11 09:55:01.834 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+[INFO ] 2022-06-11 09:55:02.080 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-06-11 09:55:03.941 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-06-11 09:55:04.215 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-11 09:55:05.227 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-06-11 09:55:05.276 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-11 09:55:05.707 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-11 09:55:05.714 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 09:55:06.346 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+[INFO ] 2022-06-11 09:55:06.501 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-06-11 09:55:06.604 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-11 09:55:07.056 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-11 09:55:07.062 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-11 09:55:07.385 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-11 09:55:08.752 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-11 09:55:10.462 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-11 09:55:10.810 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[WARN ] 2022-06-11 09:55:11.319 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-11 09:55:11.746 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-11 09:55:11.756 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-11 09:55:11.825 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10032"]
+[INFO ] 2022-06-11 09:55:11.839 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-11 09:55:11.846 [restartedMain] TomcatWebServer - Tomcat started on port(s): 10032 (http) with context path ''
+[INFO ] 2022-06-11 09:55:11.848 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='FriendFamilyMS-10032', name='FriendFamilyMS', tags=[], address='localhost', meta={secure=false}, port=10032, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:10032/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-11 09:55:11.954 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10031"]
+[INFO ] 2022-06-11 09:55:11.986 [restartedMain] TomcatWebServer - Tomcat started on port(s): 10031 (http) with context path ''
+[INFO ] 2022-06-11 09:55:11.988 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='FriendFamilyMS-10031', name='FriendFamilyMS', tags=[], address='localhost', meta={secure=false}, port=10031, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:10031/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-11 09:55:16.659 [http-nio-10031-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-11 09:55:16.659 [http-nio-10031-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-11 09:55:16.660 [http-nio-10031-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-06-11 09:55:17.569 [http-nio-10032-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-11 09:55:17.569 [http-nio-10032-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-11 09:55:17.570 [http-nio-10032-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-06-11 10:12:28.315 [Thread-1] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-10031
+[INFO ] 2022-06-11 10:12:28.356 [Thread-1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 10:12:28.362 [Thread-1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-06-11 10:12:28.367 [Thread-1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2022-06-11 10:12:28.733 [Thread-1] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-10032
+[INFO ] 2022-06-11 10:12:28.762 [Thread-1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 10:12:28.767 [Thread-1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-06-11 10:12:28.772 [Thread-1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2022-06-11 10:12:29.052 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-11 10:12:29.059 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-11 10:12:29.125 [restartedMain] GenericScope - BeanFactory id=32ce7e08-741e-32b4-8d34-a96c8717b7bb
+[INFO ] 2022-06-11 10:12:29.319 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 10031 (http)
+[INFO ] 2022-06-11 10:12:29.319 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10031"]
+[INFO ] 2022-06-11 10:12:29.319 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-11 10:12:29.319 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-11 10:12:29.351 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-11 10:12:29.357 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-11 10:12:29.358 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-11 10:12:29.359 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 671 ms
+[INFO ] 2022-06-11 10:12:29.425 [restartedMain] GenericScope - BeanFactory id=32ce7e08-741e-32b4-8d34-a96c8717b7bb
+[INFO ] 2022-06-11 10:12:29.565 [restartedMain] HikariDataSource - HikariPool-2 - Starting...
+[INFO ] 2022-06-11 10:12:29.583 [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
+[INFO ] 2022-06-11 10:12:29.586 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-11 10:12:29.590 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-11 10:12:29.598 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 10032 (http)
+[INFO ] 2022-06-11 10:12:29.598 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10032"]
+[INFO ] 2022-06-11 10:12:29.599 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-11 10:12:29.599 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-11 10:12:29.607 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-11 10:12:29.607 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 10:12:29.638 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-11 10:12:29.638 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 604 ms
+[INFO ] 2022-06-11 10:12:29.868 [restartedMain] HikariDataSource - HikariPool-2 - Starting...
+[INFO ] 2022-06-11 10:12:29.886 [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
+[INFO ] 2022-06-11 10:12:29.887 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-11 10:12:29.891 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[WARN ] 2022-06-11 10:12:29.900 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-06-11 10:12:29.909 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-11 10:12:29.909 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-11 10:12:30.195 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-11 10:12:30.948 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-11 10:12:31.195 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-11 10:12:31.204 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[WARN ] 2022-06-11 10:12:31.219 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[INFO ] 2022-06-11 10:12:31.242 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10031"]
+[INFO ] 2022-06-11 10:12:31.253 [restartedMain] TomcatWebServer - Tomcat started on port(s): 10031 (http) with context path ''
+[INFO ] 2022-06-11 10:12:31.254 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='FriendFamilyMS-10031', name='FriendFamilyMS', tags=[], address='localhost', meta={secure=false}, port=10031, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:10031/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-11 10:12:31.403 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[WARN ] 2022-06-11 10:12:31.484 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-11 10:12:31.492 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-11 10:12:31.530 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10032"]
+[INFO ] 2022-06-11 10:12:31.537 [restartedMain] TomcatWebServer - Tomcat started on port(s): 10032 (http) with context path ''
+[INFO ] 2022-06-11 10:12:31.539 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='FriendFamilyMS-10032', name='FriendFamilyMS', tags=[], address='localhost', meta={secure=false}, port=10032, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:10032/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-11 10:12:31.673 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-11 10:12:33.634 [http-nio-10032-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-11 10:12:33.634 [http-nio-10032-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-11 10:12:33.636 [http-nio-10032-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 2022-06-11 10:12:36.052 [http-nio-10031-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-11 10:12:36.052 [http-nio-10031-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-11 10:12:36.053 [http-nio-10031-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-06-11 11:06:03.786 [Thread-7] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-10031
+[INFO ] 2022-06-11 11:06:03.798 [Thread-7] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 11:06:03.803 [Thread-7] HikariDataSource - HikariPool-2 - Shutdown initiated...
+[INFO ] 2022-06-11 11:06:03.843 [Thread-7] HikariDataSource - HikariPool-2 - Shutdown completed.
+[INFO ] 2022-06-11 11:06:03.963 [Thread-7] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-10032
+[INFO ] 2022-06-11 11:06:04.062 [Thread-7] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 11:06:04.065 [Thread-7] HikariDataSource - HikariPool-2 - Shutdown initiated...
+[INFO ] 2022-06-11 11:06:04.079 [Thread-7] HikariDataSource - HikariPool-2 - Shutdown completed.
+[INFO ] 2022-06-11 11:06:08.209 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-11 11:06:08.219 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-11 11:06:08.221 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-11 11:06:08.233 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-11 11:06:08.356 [restartedMain] GenericScope - BeanFactory id=32ce7e08-741e-32b4-8d34-a96c8717b7bb
+[INFO ] 2022-06-11 11:06:08.372 [restartedMain] GenericScope - BeanFactory id=32ce7e08-741e-32b4-8d34-a96c8717b7bb
+[INFO ] 2022-06-11 11:06:08.634 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 10031 (http)
+[INFO ] 2022-06-11 11:06:08.634 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10031"]
+[INFO ] 2022-06-11 11:06:08.635 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-11 11:06:08.635 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-11 11:06:08.644 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 10032 (http)
+[INFO ] 2022-06-11 11:06:08.645 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10032"]
+[INFO ] 2022-06-11 11:06:08.645 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-11 11:06:08.645 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-11 11:06:08.690 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-11 11:06:08.690 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4205 ms
+[INFO ] 2022-06-11 11:06:08.690 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-11 11:06:08.690 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4132 ms
+[INFO ] 2022-06-11 11:06:09.011 [restartedMain] HikariDataSource - HikariPool-3 - Starting...
+[INFO ] 2022-06-11 11:06:09.015 [restartedMain] HikariDataSource - HikariPool-3 - Starting...
+[INFO ] 2022-06-11 11:06:09.038 [restartedMain] HikariDataSource - HikariPool-3 - Start completed.
+[INFO ] 2022-06-11 11:06:09.041 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-11 11:06:09.042 [restartedMain] HikariDataSource - HikariPool-3 - Start completed.
+[INFO ] 2022-06-11 11:06:09.050 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-11 11:06:09.054 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-11 11:06:09.056 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-11 11:06:09.075 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-11 11:06:09.075 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 11:06:09.077 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-11 11:06:09.077 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-11 11:06:10.455 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-11 11:06:10.491 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-11 11:06:12.833 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-11 11:06:12.982 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-11 11:06:13.255 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-11 11:06:13.272 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-11 11:06:13.322 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10032"]
+[INFO ] 2022-06-11 11:06:13.332 [restartedMain] TomcatWebServer - Tomcat started on port(s): 10032 (http) with context path ''
+[INFO ] 2022-06-11 11:06:13.333 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='FriendFamilyMS-10032', name='FriendFamilyMS', tags=[], address='localhost', meta={secure=false}, port=10032, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:10032/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[WARN ] 2022-06-11 11:06:13.378 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-11 11:06:13.391 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-11 11:06:13.440 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10031"]
+[INFO ] 2022-06-11 11:06:13.447 [restartedMain] TomcatWebServer - Tomcat started on port(s): 10031 (http) with context path ''
+[INFO ] 2022-06-11 11:06:13.449 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='FriendFamilyMS-10031', name='FriendFamilyMS', tags=[], address='localhost', meta={secure=false}, port=10031, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:10031/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-11 11:06:13.532 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-11 11:06:13.621 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-11 11:06:16.866 [http-nio-10032-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-11 11:06:16.867 [http-nio-10032-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-11 11:06:16.870 [http-nio-10032-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[INFO ] 2022-06-11 11:06:17.312 [Thread-13] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-10032
+[INFO ] 2022-06-11 11:06:17.319 [Thread-13] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 11:06:17.321 [Thread-13] HikariDataSource - HikariPool-3 - Shutdown initiated...
+[INFO ] 2022-06-11 11:06:17.327 [Thread-13] HikariDataSource - HikariPool-3 - Shutdown completed.
+[INFO ] 2022-06-11 11:06:17.483 [Thread-13] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-10031
+[INFO ] 2022-06-11 11:06:17.496 [Thread-13] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 11:06:17.498 [Thread-13] HikariDataSource - HikariPool-3 - Shutdown initiated...
+[INFO ] 2022-06-11 11:06:17.503 [Thread-13] HikariDataSource - HikariPool-3 - Shutdown completed.
+[INFO ] 2022-06-11 11:06:18.392 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-11 11:06:18.399 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-11 11:06:18.482 [restartedMain] GenericScope - BeanFactory id=32ce7e08-741e-32b4-8d34-a96c8717b7bb
+[INFO ] 2022-06-11 11:06:18.680 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 10032 (http)
+[INFO ] 2022-06-11 11:06:18.680 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10032"]
+[INFO ] 2022-06-11 11:06:18.680 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-11 11:06:18.680 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-11 11:06:18.722 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-11 11:06:18.722 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 886 ms
+[INFO ] 2022-06-11 11:06:18.946 [restartedMain] HikariDataSource - HikariPool-4 - Starting...
+[INFO ] 2022-06-11 11:06:18.964 [restartedMain] HikariDataSource - HikariPool-4 - Start completed.
+[INFO ] 2022-06-11 11:06:18.967 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-11 11:06:18.971 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-11 11:06:18.990 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-11 11:06:18.990 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 11:06:20.434 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-11 11:06:20.451 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interfaces.
+[WARN ] 2022-06-11 11:06:20.462 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-06-11 11:06:20.599 [restartedMain] GenericScope - BeanFactory id=32ce7e08-741e-32b4-8d34-a96c8717b7bb
+[INFO ] 2022-06-11 11:06:20.920 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 10031 (http)
+[INFO ] 2022-06-11 11:06:20.921 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10031"]
+[INFO ] 2022-06-11 11:06:20.921 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-11 11:06:20.922 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-11 11:06:20.991 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-11 11:06:20.991 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3096 ms
+[WARN ] 2022-06-11 11:06:22.412 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-11 11:06:22.783 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-11 11:06:22.795 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-11 11:06:22.837 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10032"]
+[INFO ] 2022-06-11 11:06:22.845 [restartedMain] TomcatWebServer - Tomcat started on port(s): 10032 (http) with context path ''
+[INFO ] 2022-06-11 11:06:22.845 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='FriendFamilyMS-10032', name='FriendFamilyMS', tags=[], address='localhost', meta={secure=false}, port=10032, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:10032/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-11 11:06:23.019 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-11 11:06:23.446 [restartedMain] HikariDataSource - HikariPool-4 - Starting...
+[INFO ] 2022-06-11 11:06:23.469 [restartedMain] HikariDataSource - HikariPool-4 - Start completed.
+[INFO ] 2022-06-11 11:06:23.475 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-11 11:06:23.484 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-11 11:06:23.518 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-11 11:06:23.518 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-11 11:06:24.001 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-11 11:06:25.345 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-11 11:06:25.586 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-11 11:06:25.594 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-11 11:06:25.629 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10031"]
+[INFO ] 2022-06-11 11:06:25.635 [restartedMain] TomcatWebServer - Tomcat started on port(s): 10031 (http) with context path ''
+[INFO ] 2022-06-11 11:06:25.637 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='FriendFamilyMS-10031', name='FriendFamilyMS', tags=[], address='localhost', meta={secure=false}, port=10031, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:10031/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-11 11:06:25.774 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-11 11:06:26.503 [http-nio-10032-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-11 11:06:26.503 [http-nio-10032-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-11 11:06:26.504 [http-nio-10032-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-06-11 11:06:32.795 [http-nio-10031-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-11 11:06:32.795 [http-nio-10031-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-11 11:06:32.797 [http-nio-10031-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 2022-06-11 11:24:20.099 [RMI TCP Connection(115)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-11 11:24:20.106 [RMI TCP Connection(115)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-11 11:24:20.149 [RMI TCP Connection(115)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-10032
+[INFO ] 2022-06-11 11:24:20.154 [RMI TCP Connection(115)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-10031
+[INFO ] 2022-06-11 11:24:20.174 [RMI TCP Connection(115)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 11:24:20.176 [RMI TCP Connection(115)-127.0.0.1] HikariDataSource - HikariPool-4 - Shutdown initiated...
+[INFO ] 2022-06-11 11:24:20.181 [RMI TCP Connection(115)-127.0.0.1] HikariDataSource - HikariPool-4 - Shutdown completed.
+[INFO ] 2022-06-11 11:24:20.182 [RMI TCP Connection(115)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 11:24:20.184 [RMI TCP Connection(115)-127.0.0.1] HikariDataSource - HikariPool-4 - Shutdown initiated...
+[INFO ] 2022-06-11 11:24:20.191 [RMI TCP Connection(115)-127.0.0.1] HikariDataSource - HikariPool-4 - Shutdown completed.
+[INFO ] 2022-06-11 11:24:42.793 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2022-06-11 11:24:43.591 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2022-06-11 11:24:43.697 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-06-11 11:24:43.697 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-06-11 11:24:43.908 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-06-11 11:24:43.909 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-06-11 11:24:48.377 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-11 11:24:48.521 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 136 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-11 11:24:48.838 [restartedMain] GenericScope - BeanFactory id=3b5e2184-1c9b-3944-96c7-521cf9e0b4cf
+[INFO ] 2022-06-11 11:24:49.227 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-06-11 11:24:50.419 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1182 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-06-11 11:24:50.717 [restartedMain] GenericScope - BeanFactory id=3b5e2184-1c9b-3944-96c7-521cf9e0b4cf
+[INFO ] 2022-06-11 11:24:51.553 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 10031 (http)
+[INFO ] 2022-06-11 11:24:51.562 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10031"]
+[INFO ] 2022-06-11 11:24:51.562 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-11 11:24:51.562 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-11 11:24:51.744 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-11 11:24:51.744 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8046 ms
+[INFO ] 2022-06-11 11:24:51.890 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 10032 (http)
+[INFO ] 2022-06-11 11:24:51.904 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10032"]
+[INFO ] 2022-06-11 11:24:51.904 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2022-06-11 11:24:51.905 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 2022-06-11 11:24:52.093 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-06-11 11:24:52.093 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8184 ms
+[INFO ] 2022-06-11 11:24:52.267 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-06-11 11:24:52.529 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-06-11 11:24:52.566 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-11 11:24:52.611 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+[INFO ] 2022-06-11 11:24:52.801 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-06-11 11:24:52.921 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-11 11:24:53.461 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-11 11:24:53.470 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-11 11:24:53.631 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-06-11 11:24:53.982 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-06-11 11:24:54.033 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-06-11 11:24:54.093 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+[INFO ] 2022-06-11 11:24:54.292 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-06-11 11:24:54.403 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[INFO ] 2022-06-11 11:24:54.912 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-06-11 11:24:54.922 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-06-11 11:24:55.414 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-11 11:24:57.794 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-06-11 11:24:59.456 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-11 11:24:59.926 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-11 11:24:59.938 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-11 11:25:00.033 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10031"]
+[INFO ] 2022-06-11 11:25:00.061 [restartedMain] TomcatWebServer - Tomcat started on port(s): 10031 (http) with context path ''
+[INFO ] 2022-06-11 11:25:00.062 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='FriendFamilyMS-10031', name='FriendFamilyMS', tags=[], address='localhost', meta={secure=false}, port=10031, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:10031/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[WARN ] 2022-06-11 11:25:00.737 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2022-06-11 11:25:01.084 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-11 11:25:01.099 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-11 11:25:01.202 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10032"]
+[INFO ] 2022-06-11 11:25:01.234 [restartedMain] TomcatWebServer - Tomcat started on port(s): 10032 (http) with context path ''
+[INFO ] 2022-06-11 11:25:01.237 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='FriendFamilyMS-10032', name='FriendFamilyMS', tags=[], address='localhost', meta={secure=false}, port=10032, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:10032/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-11 11:25:01.428 [RMI TCP Connection(3)-127.0.0.1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-11 11:25:01.428 [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-11 11:25:01.431 [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet - Completed initialization in 3 ms
+[INFO ] 2022-06-11 11:25:01.473 [RMI TCP Connection(3)-127.0.0.1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-06-11 11:25:01.473 [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-06-11 11:25:01.476 [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet - Completed initialization in 2 ms
