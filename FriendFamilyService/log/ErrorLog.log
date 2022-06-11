@@ -1658,3 +1658,13 @@ Add a spring.config.import=consul: property to your configuration.
 [INFO ] 2022-06-10 12:16:03.211 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10032"]
 [INFO ] 2022-06-10 12:16:03.251 [restartedMain] TomcatWebServer - Tomcat started on port(s): 10032 (http) with context path ''
 [INFO ] 2022-06-10 12:16:03.254 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='FriendFamilyMS-10032', name='FriendFamilyMS', tags=[], address='localhost', meta={secure=false}, port=10032, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:10032/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-10 12:21:02.271 [RMI TCP Connection(10)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-10 12:21:02.311 [RMI TCP Connection(10)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-10031
+[INFO ] 2022-06-10 12:21:02.354 [RMI TCP Connection(10)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-10 12:21:02.365 [RMI TCP Connection(10)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-06-10 12:21:02.375 [RMI TCP Connection(10)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2022-06-10 12:21:17.503 [RMI TCP Connection(10)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-10 12:21:17.543 [RMI TCP Connection(10)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-10032
+[INFO ] 2022-06-10 12:21:17.598 [RMI TCP Connection(10)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-10 12:21:17.609 [RMI TCP Connection(10)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-06-10 12:21:17.621 [RMI TCP Connection(10)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.

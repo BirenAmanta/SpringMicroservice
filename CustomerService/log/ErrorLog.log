@@ -5569,3 +5569,8 @@ java.lang.NoSuchMethodException: class org.springframework.http.ResponseEntity c
 [INFO ] 2022-06-10 12:02:35.100 [http-nio-1002-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2022-06-10 12:02:35.100 [http-nio-1002-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2022-06-10 12:02:35.102 [http-nio-1002-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 2022-06-10 12:20:16.570 [RMI TCP Connection(37)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-10 12:20:16.602 [RMI TCP Connection(37)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: CustomerMS-1002
+[INFO ] 2022-06-10 12:20:16.613 [RMI TCP Connection(37)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-10 12:20:16.616 [RMI TCP Connection(37)-127.0.0.1] HikariDataSource - HikariPool-4 - Shutdown initiated...
+[INFO ] 2022-06-10 12:20:16.622 [RMI TCP Connection(37)-127.0.0.1] HikariDataSource - HikariPool-4 - Shutdown completed.

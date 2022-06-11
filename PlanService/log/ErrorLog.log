@@ -1946,3 +1946,8 @@ Add a spring.config.import=consul: property to your configuration.
 [INFO ] 2022-06-10 12:14:33.572 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-1004"]
 [INFO ] 2022-06-10 12:14:33.604 [restartedMain] TomcatWebServer - Tomcat started on port(s): 1004 (http) with context path ''
 [INFO ] 2022-06-10 12:14:33.607 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='PlanMS-1004', name='PlanMS', tags=[], address='localhost', meta={secure=false}, port=1004, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:1004/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-10 12:20:47.034 [RMI TCP Connection(17)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-10 12:20:47.084 [RMI TCP Connection(17)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: PlanMS-1004
+[INFO ] 2022-06-10 12:20:47.126 [RMI TCP Connection(17)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-10 12:20:47.135 [RMI TCP Connection(17)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-06-10 12:20:47.144 [RMI TCP Connection(17)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.

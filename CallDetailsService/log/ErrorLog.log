@@ -547,3 +547,8 @@ Add a spring.config.import=consul: property to your configuration.
 [INFO ] 2022-06-10 12:10:27.300 [RMI TCP Connection(1)-127.0.0.1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2022-06-10 12:10:27.300 [RMI TCP Connection(1)-127.0.0.1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2022-06-10 12:10:27.303 [RMI TCP Connection(1)-127.0.0.1] DispatcherServlet - Completed initialization in 3 ms
+[INFO ] 2022-06-10 12:20:31.781 [RMI TCP Connection(20)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-10 12:20:31.834 [RMI TCP Connection(20)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-1001
+[INFO ] 2022-06-10 12:20:31.869 [RMI TCP Connection(20)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-10 12:20:31.878 [RMI TCP Connection(20)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-06-10 12:20:31.889 [RMI TCP Connection(20)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
