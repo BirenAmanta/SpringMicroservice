@@ -17,20 +17,25 @@ public class CustomerCircuitBreakerServiceImpl implements CustomerCircuitBreaker
 	@Autowired
 	RestTemplate restTemplate;
 	
+	@Autowired
+	CustomerFriendFamilyFeign customerFriendFamilyFeign;
+	
+	@Autowired
+	CustomerPlanFeign customerPlanFeign;
+	
 	@CircuitBreaker(name = "customerService")
 	@Override
 	public Future<PlanDTO> getPlan(Integer planId) {
 		// TODO Auto-generated method stub
-		return Future.of(()->restTemplate.getForObject("http://PlanMS/plan/{planId}", PlanDTO.class,planId)); 
+		return Future.of(()->customerPlanFeign.getPlanFeign(planId)); 
 	}
 
-	@SuppressWarnings("unchecked")
+//	@SuppressWarnings("unchecked")
 	@Override
 	@CircuitBreaker(name = "customerService")
 	public Future<List<Long>> getFriends(Long customerPhoneNo) {
 		// TODO Auto-generated method stub
-		return  Future.of(()->(List<Long>) restTemplate
-				.getForObject("http://FriendFamilyMS/friendfamily/fetch/{customerPhoneNo}", List.class,customerPhoneNo));
+		return  Future.of(()->customerFriendFamilyFeign.getFriendFeign(customerPhoneNo));
 	}
 
 }

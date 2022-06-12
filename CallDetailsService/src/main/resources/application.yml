@@ -1,6 +1,20 @@
 server:
   port: 1001
-
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
 resilience4j:
   circuitbreaker:
     instances:
