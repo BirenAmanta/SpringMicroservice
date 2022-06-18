@@ -1,5 +1,5 @@
 server:
-  port: 1001
+  port: 0
 management:
   endpoint:
     metrics:
@@ -44,7 +44,6 @@ spring:
         format: YAML
   config:
     import: 'consul:'
-      
       
       
       

@@ -35,7 +35,7 @@ public class PlanController {
 		LOGGER.info(message);
 		return new ResponseEntity<List<PlanDTO>>(allPlans,HttpStatus.OK);
 	}
-	@GetMapping(value = "/{planId}" ,produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value = "/id/{planId}" ,produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<PlanDTO> getPlan(@PathVariable Integer planId) throws PlanException
 	{
 		PlanDTO plan=planService.getPlan(planId);

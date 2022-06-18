@@ -6,6 +6,11 @@ spring:
     name: gatewayMS
   cloud:
     consul:
+      config:
+        data-key: data
+        prefixes:
+        - config
+        format: yaml
       host: localhost
       port: 8500
     gateway:
@@ -17,23 +22,35 @@ spring:
         uri: lb://CallDetailsMS
         predicates:
         - Path=/calldetails/**
+        filters:
+        - APIGatewayFilter
       - id: CustomerMS
         uri: lb://CustomerMS
         predicates:
-        - Path=/customer/**
+        - Path=/customer/find/**,/customer/create
+        filters:
+        - APIGatewayFilter
       - id: FriendFamilyMS
         uri: lb://FriendFamilyMS
         predicates:
-        - Path=/friendfamily/**
+        - Path=/friendfamily/fetch/**,/friendfamily/save/**
+        filters:
+        - APIGatewayFilter
       - id: PlanMS
         uri: lb://PlanMS
         predicates:
-        - Path=/plan/**
+        - Path=/plan/id/**,/plan/plans
+        filters:
+        - APIGatewayFilter
+      - id: SecurityMS
+        uri: lb://SecurityMS
+        predicates:
+        - Path=/login
+        filters:
+        - APIGatewayFilter
+          
           
        
   config:
     import: 'consul:'
-      
-      
-      
-      
+    
