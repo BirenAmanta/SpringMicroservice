@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/call_details
+
+------------------------------------------
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/customer_db
+
+------------------------------------------
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/plan
+
+------------------------------------------
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/friend_family_db
+
+------------------------------------------
+spring:
+  datasource:
+    username: root
+    password: root
+jwt:
+  secret: apiGateway_RESTBiren_Mindtree
+
+------------------------------------------
+
+consul agent -ui -server -data-dir consul-data2 -advertise 127.0.0.1 -bootstrap-expect 1

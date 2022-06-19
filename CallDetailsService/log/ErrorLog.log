@@ -6160,3 +6160,8 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 [INFO ] 2022-06-19 10:32:04.740 [http-nio-auto-4-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2022-06-19 10:32:04.740 [http-nio-auto-4-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2022-06-19 10:32:04.742 [http-nio-auto-4-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 2022-06-19 11:42:02.675 [RMI TCP Connection(129)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-19 11:42:02.705 [RMI TCP Connection(129)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: CallDetailsMS-0
+[INFO ] 2022-06-19 11:42:02.717 [RMI TCP Connection(129)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-19 11:42:02.719 [RMI TCP Connection(129)-127.0.0.1] HikariDataSource - HikariPool-4 - Shutdown initiated...
+[INFO ] 2022-06-19 11:42:02.726 [RMI TCP Connection(129)-127.0.0.1] HikariDataSource - HikariPool-4 - Shutdown completed.

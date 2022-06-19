@@ -16070,3 +16070,18 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 [INFO ] 2022-06-19 10:32:59.018 [http-nio-auto-3-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2022-06-19 10:32:59.018 [http-nio-auto-3-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2022-06-19 10:32:59.020 [http-nio-auto-3-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 2022-06-19 11:41:16.461 [RMI TCP Connection(149)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-19 11:41:16.481 [RMI TCP Connection(149)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-0-140598181743719541
+[INFO ] 2022-06-19 11:41:16.497 [RMI TCP Connection(149)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-19 11:41:16.498 [RMI TCP Connection(149)-127.0.0.1] HikariDataSource - HikariPool-3 - Shutdown initiated...
+[INFO ] 2022-06-19 11:41:16.503 [RMI TCP Connection(149)-127.0.0.1] HikariDataSource - HikariPool-3 - Shutdown completed.
+[INFO ] 2022-06-19 11:41:31.621 [RMI TCP Connection(128)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-19 11:41:31.644 [RMI TCP Connection(128)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-0-3882929754356783556
+[INFO ] 2022-06-19 11:41:31.660 [RMI TCP Connection(128)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-19 11:41:31.662 [RMI TCP Connection(128)-127.0.0.1] HikariDataSource - HikariPool-3 - Shutdown initiated...
+[INFO ] 2022-06-19 11:41:31.672 [RMI TCP Connection(128)-127.0.0.1] HikariDataSource - HikariPool-3 - Shutdown completed.
+[INFO ] 2022-06-19 11:42:17.849 [RMI TCP Connection(148)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-19 11:42:17.890 [RMI TCP Connection(148)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: FriendFamilyMS-0-5182035702073028238
+[INFO ] 2022-06-19 11:42:17.902 [RMI TCP Connection(148)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-19 11:42:17.904 [RMI TCP Connection(148)-127.0.0.1] HikariDataSource - HikariPool-3 - Shutdown initiated...
+[INFO ] 2022-06-19 11:42:17.907 [RMI TCP Connection(148)-127.0.0.1] HikariDataSource - HikariPool-3 - Shutdown completed.

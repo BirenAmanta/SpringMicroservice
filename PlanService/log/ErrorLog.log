@@ -6934,3 +6934,8 @@ com.ecwid.consul.v1.OperationException: OperationException(statusCode=500, statu
 [WARN ] 2022-06-19 10:33:45.282 [http-nio-auto-3-exec-4] PageNotFound - No mapping for POST /plan/plan
 [ERROR] 2022-06-19 10:33:45.285 [http-nio-auto-3-exec-4] ControllerAdvice - No handler found for POST /plan/plan
 [WARN ] 2022-06-19 10:33:45.297 [http-nio-auto-3-exec-4] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /plan/plan]
+[INFO ] 2022-06-19 11:42:33.029 [RMI TCP Connection(149)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-19 11:42:33.050 [RMI TCP Connection(149)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: PlanMS-0
+[INFO ] 2022-06-19 11:42:33.084 [RMI TCP Connection(149)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-06-19 11:42:33.085 [RMI TCP Connection(149)-127.0.0.1] HikariDataSource - HikariPool-3 - Shutdown initiated...
+[INFO ] 2022-06-19 11:42:33.090 [RMI TCP Connection(149)-127.0.0.1] HikariDataSource - HikariPool-3 - Shutdown completed.
