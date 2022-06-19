@@ -27,19 +27,19 @@ spring:
       - id: CustomerMS
         uri: lb://CustomerMS
         predicates:
-        - Path=/customer/find/**,/customer/create
+        - Path=/customer/**
         filters:
         - APIGatewayFilter
       - id: FriendFamilyMS
         uri: lb://FriendFamilyMS
         predicates:
-        - Path=/friendfamily/fetch/**,/friendfamily/save/**
+        - Path=/friendfamily/**
         filters:
         - APIGatewayFilter
       - id: PlanMS
         uri: lb://PlanMS
         predicates:
-        - Path=/plan/id/**,/plan/plans
+        - Path=/plan/**
         filters:
         - APIGatewayFilter
       - id: SecurityMS

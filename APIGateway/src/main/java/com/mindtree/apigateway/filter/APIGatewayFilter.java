@@ -92,7 +92,7 @@ public class APIGatewayFilter extends AbstractGatewayFilterFactory<APIGatewayFil
 						response.setStatusCode(HttpStatus.BAD_REQUEST);
 						ErrorInfo error = new ErrorInfo();
 						error.setErrorCode(HttpStatus.UNAUTHORIZED.value());
-						error.setErrorMsg("SERVICE.AUTH");
+						error.setErrorMsg("SERVIC");
 						error.setTimeStamp(LocalDateTime.now());
 
 						try {

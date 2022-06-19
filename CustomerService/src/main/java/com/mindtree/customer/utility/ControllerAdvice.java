@@ -17,6 +17,8 @@ import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.servlet.NoHandlerFoundException;
+
 import com.mindtree.customer.exception.CustomerException;
 
 
@@ -38,6 +40,16 @@ public class ControllerAdvice {
 		error.setTimeStamp(LocalDateTime.now());
 		error.setErrorCode(HttpStatus.BAD_REQUEST.value());
 		return new ResponseEntity<ErrorInfo>(error, HttpStatus.BAD_REQUEST);
+	}
+	@ExceptionHandler(NoHandlerFoundException.class)
+	public ResponseEntity<ErrorInfo> pathException(NoHandlerFoundException exception) {
+		String message = environment.getProperty(exception.getMessage(),exception.getMessage());
+		LOGGER.error(message);
+		ErrorInfo error = new ErrorInfo();
+		error.setErrorMsg(message);
+		error.setTimeStamp(LocalDateTime.now());
+		error.setErrorCode(HttpStatus.NOT_FOUND.value());
+		return new ResponseEntity<ErrorInfo>(error, HttpStatus.NOT_FOUND);
 	}
 
 	@ExceptionHandler({ MethodArgumentNotValidException.class, ConstraintViolationException.class })

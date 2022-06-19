@@ -6629,3 +6629,497 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 [INFO ] 2022-06-18 18:37:51.816 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='gatewayMS-5001', name='gatewayMS', tags=[], address='192.168.1.41', meta={secure=false}, port=5001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.1.41:5001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
 [INFO ] 2022-06-18 18:37:52.112 [restartedMain] ApiGatewayApplication - Started ApiGatewayApplication in 1.362 seconds (JVM running for 388.355)
 [INFO ] 2022-06-18 18:37:52.117 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[ERROR] 2022-06-18 18:41:46.881 [catalogWatchTaskScheduler-1] ConsulDiscoveryClient - Error watching Consul CatalogServices
+com.ecwid.consul.v1.OperationException: OperationException(statusCode=500, statusMessage='Internal Server Error', statusContent='No cluster leader')
+	at com.ecwid.consul.v1.catalog.CatalogConsulClient.getCatalogServices(CatalogConsulClient.java:151) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.ConsulClient.getCatalogServices(ConsulClient.java:400) ~[consul-api-1.4.5.jar:?]
+	at org.springframework.cloud.consul.discovery.ConsulCatalogWatch.catalogServicesWatch(ConsulCatalogWatch.java:130) ~[spring-cloud-consul-discovery-3.1.1.jar:3.1.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.20.jar:5.3.20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[INFO ] 2022-06-18 18:41:47.863 [configWatchTaskScheduler-1] RetryExec - I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8500: An established connection was aborted by the software in your host machine
+[INFO ] 2022-06-18 18:41:47.864 [configWatchTaskScheduler-1] RetryExec - Retrying request to {}->http://localhost:8500
+[INFO ] 2022-06-18 18:41:47.864 [configWatchTaskScheduler-1] RetryExec - I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8500: An established connection was aborted by the software in your host machine
+[INFO ] 2022-06-18 18:41:47.864 [configWatchTaskScheduler-1] RetryExec - Retrying request to {}->http://localhost:8500
+[INFO ] 2022-06-18 18:41:47.865 [configWatchTaskScheduler-1] RetryExec - I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8500: An established connection was aborted by the software in your host machine
+[INFO ] 2022-06-18 18:41:47.865 [configWatchTaskScheduler-1] RetryExec - Retrying request to {}->http://localhost:8500
+[WARN ] 2022-06-18 18:41:47.865 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/gatewayMS,default/'. Message: java.net.SocketException: An established connection was aborted by the software in your host machine
+[INFO ] 2022-06-18 18:41:47.866 [configWatchTaskScheduler-1] RetryExec - I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8500: An established connection was aborted by the software in your host machine
+[INFO ] 2022-06-18 18:41:47.866 [configWatchTaskScheduler-1] RetryExec - Retrying request to {}->http://localhost:8500
+[INFO ] 2022-06-18 18:41:47.867 [configWatchTaskScheduler-1] RetryExec - I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8500: An established connection was aborted by the software in your host machine
+[INFO ] 2022-06-18 18:41:47.867 [configWatchTaskScheduler-1] RetryExec - Retrying request to {}->http://localhost:8500
+[INFO ] 2022-06-18 18:41:47.867 [configWatchTaskScheduler-1] RetryExec - I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8500: An established connection was aborted by the software in your host machine
+[INFO ] 2022-06-18 18:41:47.867 [configWatchTaskScheduler-1] RetryExec - Retrying request to {}->http://localhost:8500
+[WARN ] 2022-06-18 18:41:47.867 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/gatewayMS/'. Message: java.net.SocketException: An established connection was aborted by the software in your host machine
+[INFO ] 2022-06-18 18:41:47.868 [configWatchTaskScheduler-1] RetryExec - I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8500: An established connection was aborted by the software in your host machine
+[INFO ] 2022-06-18 18:41:47.868 [configWatchTaskScheduler-1] RetryExec - Retrying request to {}->http://localhost:8500
+[WARN ] 2022-06-18 18:41:47.871 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application,default/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[WARN ] 2022-06-18 18:41:47.896 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[ERROR] 2022-06-18 18:41:47.897 [catalogWatchTaskScheduler-1] ConsulDiscoveryClient - Error watching Consul CatalogServices
+com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.transport.AbstractHttpTransport.makeGetRequest(AbstractHttpTransport.java:36) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.ConsulRawClient.makeGetRequest(ConsulRawClient.java:139) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.catalog.CatalogConsulClient.getCatalogServices(CatalogConsulClient.java:143) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.ConsulClient.getCatalogServices(ConsulClient.java:400) ~[consul-api-1.4.5.jar:?]
+	at org.springframework.cloud.consul.discovery.ConsulCatalogWatch.catalogServicesWatch(ConsulCatalogWatch.java:130) ~[spring-cloud-consul-discovery-3.1.1.jar:3.1.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.20.jar:5.3.20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
+	... 12 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:669) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[?:?]
+	at java.net.Socket.connect(Socket.java:645) ~[?:?]
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
+	... 12 more
+[WARN ] 2022-06-18 18:41:48.910 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/gatewayMS,default/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[ERROR] 2022-06-18 18:41:48.910 [catalogWatchTaskScheduler-1] ConsulDiscoveryClient - Error watching Consul CatalogServices
+com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.transport.AbstractHttpTransport.makeGetRequest(AbstractHttpTransport.java:36) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.ConsulRawClient.makeGetRequest(ConsulRawClient.java:139) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.catalog.CatalogConsulClient.getCatalogServices(CatalogConsulClient.java:143) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.ConsulClient.getCatalogServices(ConsulClient.java:400) ~[consul-api-1.4.5.jar:?]
+	at org.springframework.cloud.consul.discovery.ConsulCatalogWatch.catalogServicesWatch(ConsulCatalogWatch.java:130) ~[spring-cloud-consul-discovery-3.1.1.jar:3.1.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.20.jar:5.3.20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
+	... 12 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:669) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[?:?]
+	at java.net.Socket.connect(Socket.java:645) ~[?:?]
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
+	... 12 more
+[WARN ] 2022-06-18 18:41:48.911 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/gatewayMS/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[WARN ] 2022-06-18 18:41:48.912 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application,default/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[WARN ] 2022-06-18 18:41:48.913 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[ERROR] 2022-06-18 18:41:49.913 [catalogWatchTaskScheduler-1] ConsulDiscoveryClient - Error watching Consul CatalogServices
+com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.transport.AbstractHttpTransport.makeGetRequest(AbstractHttpTransport.java:36) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.ConsulRawClient.makeGetRequest(ConsulRawClient.java:139) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.catalog.CatalogConsulClient.getCatalogServices(CatalogConsulClient.java:143) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.ConsulClient.getCatalogServices(ConsulClient.java:400) ~[consul-api-1.4.5.jar:?]
+	at org.springframework.cloud.consul.discovery.ConsulCatalogWatch.catalogServicesWatch(ConsulCatalogWatch.java:130) ~[spring-cloud-consul-discovery-3.1.1.jar:3.1.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.20.jar:5.3.20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
+	... 12 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:669) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[?:?]
+	at java.net.Socket.connect(Socket.java:645) ~[?:?]
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
+	... 12 more
+[WARN ] 2022-06-18 18:41:49.960 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/gatewayMS,default/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[WARN ] 2022-06-18 18:41:49.963 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/gatewayMS/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[WARN ] 2022-06-18 18:41:49.966 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application,default/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[WARN ] 2022-06-18 18:41:49.970 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[ERROR] 2022-06-18 18:41:50.925 [catalogWatchTaskScheduler-1] ConsulDiscoveryClient - Error watching Consul CatalogServices
+com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.transport.AbstractHttpTransport.makeGetRequest(AbstractHttpTransport.java:36) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.ConsulRawClient.makeGetRequest(ConsulRawClient.java:139) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.catalog.CatalogConsulClient.getCatalogServices(CatalogConsulClient.java:143) ~[consul-api-1.4.5.jar:?]
+	at com.ecwid.consul.v1.ConsulClient.getCatalogServices(ConsulClient.java:400) ~[consul-api-1.4.5.jar:?]
+	at org.springframework.cloud.consul.discovery.ConsulCatalogWatch.catalogServicesWatch(ConsulCatalogWatch.java:130) ~[spring-cloud-consul-discovery-3.1.1.jar:3.1.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.20.jar:5.3.20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
+	... 12 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:669) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[?:?]
+	at java.net.Socket.connect(Socket.java:645) ~[?:?]
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
+	... 12 more
+[WARN ] 2022-06-18 18:41:50.983 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/gatewayMS,default/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[WARN ] 2022-06-18 18:41:50.986 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/gatewayMS/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[WARN ] 2022-06-18 18:41:50.988 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application,default/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[WARN ] 2022-06-18 18:41:50.988 [configWatchTaskScheduler-1] ConfigWatch - Error querying consul Key/Values for context 'config/application/'. Message: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[INFO ] 2022-06-18 18:41:51.918 [RMI TCP Connection(18)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2022-06-18 18:41:51.922 [RMI TCP Connection(18)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: gatewayMS-5001
+[WARN ] 2022-06-18 18:41:51.924 [RMI TCP Connection(18)-127.0.0.1] CommonAnnotationBeanPostProcessor - Destroy method on bean with name 'consulAutoServiceRegistration' threw an exception: com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[INFO ] 2022-06-19 09:44:02.968 [restartedMain] ApiGatewayApplication - Starting ApiGatewayApplication using Java 16.0.2 on MT-5CD119LF0H with PID 7720 (D:\Spring\SpringMicroservices\APIGateway\target\classes started by M1074035 in D:\Spring\SpringMicroservices\APIGateway)
+[DEBUG] 2022-06-19 09:44:02.975 [restartedMain] ApiGatewayApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+[INFO ] 2022-06-19 09:44:02.977 [restartedMain] ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-06-19 09:44:03.191 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-06-19 09:44:03.191 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-06-19 09:44:03.657 [background-preinit] Version - HV000001: Hibernate Validator 6.2.3.Final
+[INFO ] 2022-06-19 09:44:15.466 [restartedMain] GenericScope - BeanFactory id=b5c10f63-8cab-3311-87c3-396682623181
+[INFO ] 2022-06-19 09:44:15.897 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:44:15.900 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:44:15.903 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:44:41.786 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+[INFO ] 2022-06-19 09:44:41.787 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+[INFO ] 2022-06-19 09:44:41.788 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+[INFO ] 2022-06-19 09:44:41.788 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2022-06-19 09:44:41.788 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+[INFO ] 2022-06-19 09:44:41.788 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+[INFO ] 2022-06-19 09:44:41.788 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+[INFO ] 2022-06-19 09:44:41.789 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+[INFO ] 2022-06-19 09:44:41.789 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+[INFO ] 2022-06-19 09:44:41.789 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2022-06-19 09:44:41.789 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2022-06-19 09:44:41.789 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2022-06-19 09:44:41.789 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2022-06-19 09:44:41.789 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2022-06-19 09:44:43.050 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-19 09:44:44.615 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2022-06-19 09:44:44.787 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-19 09:44:47.659 [restartedMain] NettyWebServer - Netty started on port 5001
+[INFO ] 2022-06-19 09:44:47.664 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='gatewayMS-5001', name='gatewayMS', tags=[], address='192.168.1.41', meta={secure=false}, port=5001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.1.41:5001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-19 09:44:49.675 [restartedMain] ApiGatewayApplication - Started ApiGatewayApplication in 54.993 seconds (JVM running for 63.33)
+[INFO ] 2022-06-19 09:47:34.671 [Thread-7] ConsulServiceRegistry - Deregistering service with consul: gatewayMS-5001
+[ERROR] 2022-06-19 09:47:34.735 [boundedElastic-20] CachingRouteLocator - Refresh routes error !!!
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'defaultValidator': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfAvailable(DefaultListableBeanFactory.java:2030) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.gateway.support.ConfigurationService$ConfigurableBuilder.doBind(ConfigurationService.java:150) ~[spring-cloud-gateway-server-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.gateway.support.ConfigurationService$AbstractBuilder.bind(ConfigurationService.java:244) ~[spring-cloud-gateway-server-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.loadGatewayFilters(RouteDefinitionRouteLocator.java:144) ~[spring-cloud-gateway-server-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.getFilters(RouteDefinitionRouteLocator.java:176) ~[spring-cloud-gateway-server-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.convertToRoute(RouteDefinitionRouteLocator.java:117) ~[spring-cloud-gateway-server-3.1.1.jar:3.1.1]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmitScalar(FluxFlatMap.java:488) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:421) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.drain(FluxMergeSequential.java:432) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.innerNext(FluxMergeSequential.java:304) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialInner.onNext(FluxMergeSequential.java:571) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onSubscribeInner(MonoFlatMapMany.java:150) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onSubscribe(MonoFlatMapMany.java:245) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8469) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:195) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:159) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.checkTerminated(FluxFlatMap.java:846) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:608) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drain(FluxFlatMap.java:588) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onComplete(FluxFlatMap.java:465) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.checkTerminated(FluxFlatMap.java:846) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:608) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.innerComplete(FluxFlatMap.java:894) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onComplete(FluxFlatMap.java:997) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1799) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoCollectList$MonoCollectListSubscriber.onComplete(MonoCollectList.java:128) [reactor-core-3.4.18.jar:3.4.18]
+	at org.springframework.cloud.commons.publisher.FluxFirstNonEmptyEmitting$FirstNonEmptyEmittingSubscriber.onComplete(FluxFirstNonEmptyEmitting.java:325) [spring-cloud-commons-3.1.3.jar:3.1.3]
+	at reactor.core.publisher.FluxSubscribeOn$SubscribeOnSubscriber.onComplete(FluxSubscribeOn.java:166) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onComplete(Operators.java:2058) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.fastPath(FluxIterable.java:362) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:227) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2194) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onSubscribe(FluxOnErrorResume.java:74) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxSubscribeOn$SubscribeOnSubscriber.run(FluxSubscribeOn.java:194) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37) [reactor-core-3.4.18.jar:3.4.18]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[INFO ] 2022-06-19 09:47:39.099 [restartedMain] ApiGatewayApplication - Starting ApiGatewayApplication using Java 16.0.2 on MT-5CD119LF0H with PID 7720 (D:\Spring\SpringMicroservices\APIGateway\target\classes started by M1074035 in D:\Spring\SpringMicroservices\APIGateway)
+[DEBUG] 2022-06-19 09:47:39.100 [restartedMain] ApiGatewayApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+[INFO ] 2022-06-19 09:47:39.100 [restartedMain] ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-06-19 09:47:39.973 [restartedMain] GenericScope - BeanFactory id=b5c10f63-8cab-3311-87c3-396682623181
+[INFO ] 2022-06-19 09:47:39.993 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:47:39.994 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:47:39.995 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:47:41.016 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+[INFO ] 2022-06-19 09:47:41.016 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+[INFO ] 2022-06-19 09:47:41.016 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+[INFO ] 2022-06-19 09:47:41.016 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2022-06-19 09:47:41.016 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+[INFO ] 2022-06-19 09:47:41.016 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+[INFO ] 2022-06-19 09:47:41.016 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+[INFO ] 2022-06-19 09:47:41.017 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+[INFO ] 2022-06-19 09:47:41.017 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+[INFO ] 2022-06-19 09:47:41.017 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2022-06-19 09:47:41.017 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2022-06-19 09:47:41.017 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2022-06-19 09:47:41.017 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2022-06-19 09:47:41.017 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2022-06-19 09:47:41.144 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-19 09:47:41.241 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2022-06-19 09:47:41.262 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-19 09:47:41.337 [restartedMain] NettyWebServer - Netty started on port 5001
+[INFO ] 2022-06-19 09:47:41.339 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='gatewayMS-5001', name='gatewayMS', tags=[], address='192.168.1.41', meta={secure=false}, port=5001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.1.41:5001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-19 09:47:41.880 [restartedMain] ApiGatewayApplication - Started ApiGatewayApplication in 4.257 seconds (JVM running for 235.536)
+[INFO ] 2022-06-19 09:47:41.887 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-19 09:49:54.319 [Thread-17] ConsulServiceRegistry - Deregistering service with consul: gatewayMS-5001
+[INFO ] 2022-06-19 09:49:56.971 [restartedMain] ApiGatewayApplication - Starting ApiGatewayApplication using Java 16.0.2 on MT-5CD119LF0H with PID 7720 (D:\Spring\SpringMicroservices\APIGateway\target\classes started by M1074035 in D:\Spring\SpringMicroservices\APIGateway)
+[DEBUG] 2022-06-19 09:49:56.971 [restartedMain] ApiGatewayApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+[INFO ] 2022-06-19 09:49:56.971 [restartedMain] ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-06-19 09:49:57.741 [restartedMain] GenericScope - BeanFactory id=b5c10f63-8cab-3311-87c3-396682623181
+[INFO ] 2022-06-19 09:49:57.765 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:49:57.765 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:49:57.766 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:49:58.769 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+[INFO ] 2022-06-19 09:49:58.770 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+[INFO ] 2022-06-19 09:49:58.770 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+[INFO ] 2022-06-19 09:49:58.770 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2022-06-19 09:49:58.770 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+[INFO ] 2022-06-19 09:49:58.770 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+[INFO ] 2022-06-19 09:49:58.770 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+[INFO ] 2022-06-19 09:49:58.770 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+[INFO ] 2022-06-19 09:49:58.770 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+[INFO ] 2022-06-19 09:49:58.771 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2022-06-19 09:49:58.771 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2022-06-19 09:49:58.771 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2022-06-19 09:49:58.771 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2022-06-19 09:49:58.771 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2022-06-19 09:49:58.938 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-19 09:49:59.025 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2022-06-19 09:49:59.055 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-19 09:49:59.217 [restartedMain] NettyWebServer - Netty started on port 5001
+[INFO ] 2022-06-19 09:49:59.220 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='gatewayMS-5001', name='gatewayMS', tags=[], address='192.168.1.41', meta={secure=false}, port=5001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.1.41:5001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-19 09:49:59.816 [restartedMain] ApiGatewayApplication - Started ApiGatewayApplication in 3.303 seconds (JVM running for 373.471)
+[INFO ] 2022-06-19 09:49:59.821 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2022-06-19 09:54:17.749 [Thread-31] ConsulServiceRegistry - Deregistering service with consul: gatewayMS-5001
+[ERROR] 2022-06-19 09:54:17.781 [boundedElastic-18] CachingRouteLocator - Refresh routes error !!!
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'defaultValidator': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfAvailable(DefaultListableBeanFactory.java:2030) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.gateway.support.ConfigurationService$ConfigurableBuilder.doBind(ConfigurationService.java:150) ~[spring-cloud-gateway-server-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.gateway.support.ConfigurationService$AbstractBuilder.bind(ConfigurationService.java:244) ~[spring-cloud-gateway-server-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.lookup(RouteDefinitionRouteLocator.java:216) ~[spring-cloud-gateway-server-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.combinePredicates(RouteDefinitionRouteLocator.java:189) ~[spring-cloud-gateway-server-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.convertToRoute(RouteDefinitionRouteLocator.java:116) ~[spring-cloud-gateway-server-3.1.1.jar:3.1.1]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmitScalar(FluxFlatMap.java:488) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:421) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.drain(FluxMergeSequential.java:432) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.innerNext(FluxMergeSequential.java:304) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialInner.onNext(FluxMergeSequential.java:571) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onSubscribeInner(MonoFlatMapMany.java:150) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onSubscribe(MonoFlatMapMany.java:245) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8469) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:195) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:159) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.checkTerminated(FluxFlatMap.java:846) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:608) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drain(FluxFlatMap.java:588) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onComplete(FluxFlatMap.java:465) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.checkTerminated(FluxFlatMap.java:846) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:608) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.innerComplete(FluxFlatMap.java:894) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onComplete(FluxFlatMap.java:997) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1799) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.MonoCollectList$MonoCollectListSubscriber.onComplete(MonoCollectList.java:128) [reactor-core-3.4.18.jar:3.4.18]
+	at org.springframework.cloud.commons.publisher.FluxFirstNonEmptyEmitting$FirstNonEmptyEmittingSubscriber.onComplete(FluxFirstNonEmptyEmitting.java:325) [spring-cloud-commons-3.1.3.jar:3.1.3]
+	at reactor.core.publisher.FluxSubscribeOn$SubscribeOnSubscriber.onComplete(FluxSubscribeOn.java:166) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onComplete(Operators.java:2058) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.fastPath(FluxIterable.java:362) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:227) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2194) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onSubscribe(FluxOnErrorResume.java:74) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxSubscribeOn$SubscribeOnSubscriber.run(FluxSubscribeOn.java:194) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84) [reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37) [reactor-core-3.4.18.jar:3.4.18]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[INFO ] 2022-06-19 09:54:20.371 [restartedMain] ApiGatewayApplication - Starting ApiGatewayApplication using Java 16.0.2 on MT-5CD119LF0H with PID 7720 (D:\Spring\SpringMicroservices\APIGateway\target\classes started by M1074035 in D:\Spring\SpringMicroservices\APIGateway)
+[DEBUG] 2022-06-19 09:54:20.372 [restartedMain] ApiGatewayApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+[INFO ] 2022-06-19 09:54:20.372 [restartedMain] ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-06-19 09:54:20.909 [restartedMain] GenericScope - BeanFactory id=b5c10f63-8cab-3311-87c3-396682623181
+[INFO ] 2022-06-19 09:54:20.926 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:54:20.927 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:54:20.928 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2022-06-19 09:54:21.832 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+[INFO ] 2022-06-19 09:54:21.832 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+[INFO ] 2022-06-19 09:54:21.832 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+[INFO ] 2022-06-19 09:54:21.832 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+[INFO ] 2022-06-19 09:54:21.832 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+[INFO ] 2022-06-19 09:54:21.832 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+[INFO ] 2022-06-19 09:54:21.832 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+[INFO ] 2022-06-19 09:54:21.832 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+[INFO ] 2022-06-19 09:54:21.832 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+[INFO ] 2022-06-19 09:54:21.832 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+[INFO ] 2022-06-19 09:54:21.832 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+[INFO ] 2022-06-19 09:54:21.833 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[INFO ] 2022-06-19 09:54:21.833 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+[INFO ] 2022-06-19 09:54:21.833 [restartedMain] RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[INFO ] 2022-06-19 09:54:21.934 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-06-19 09:54:22.012 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2022-06-19 09:54:22.034 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2022-06-19 09:54:22.091 [restartedMain] NettyWebServer - Netty started on port 5001
+[INFO ] 2022-06-19 09:54:22.093 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='gatewayMS-5001', name='gatewayMS', tags=[], address='192.168.1.41', meta={secure=false}, port=5001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.1.41:5001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2022-06-19 09:54:22.633 [restartedMain] ApiGatewayApplication - Started ApiGatewayApplication in 2.668 seconds (JVM running for 636.255)
+[INFO ] 2022-06-19 09:54:22.640 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
